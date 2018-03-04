@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from demo.bitto.tech/borrowing.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Mar 2018 04:16:58 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MITNet Exchange | ICO Bitcoin Exchange, Signal Trading</title>
+
+<!-- Global stylesheets -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/jquery.percentageloader-0.1.css" rel="stylesheet" type="text/css">
+<!-- /global stylesheets -->
+
+<!-- Core JS files -->
+<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+<!-- /core JS files -->
+
+<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/visualization/d3/d3.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/visualization/c3/c3.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/charts/c3/c3_bars_pies.js"></script>
+  <script type="text/javascript" src="assets/js/charts/jquery.percentageloader-0.1.js"></script>
+
+	<script type="text/javascript" src="assets/js/plugins/ui/ripple.min.js"></script>
+<!-- /theme JS files -->
+<style>
+
+</style>
+</head>
+
+<body class="navbar-bottom">
+
+<!-- Main navbar -->
+<div class="navbar navbar-inverse bg-indigo">
+  <div class="navbar-header"> <a class="navbar-brand" href="index-2.html"><img src="assets/images/logo.png" alt=""></a>
+    <ul class="nav navbar-nav visible-xs-block">
+      <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+      <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+    </ul>
+  </div>
+  <div class="navbar-collapse collapse" id="navbar-mobile">
+    <ul class="nav navbar-nav bitto_text">
+      <!--<li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>-->
+      <li>BITTO = $21</li>
+      <li>BTC = $17000</li>
+      <li>ETH = $700</li>
+    </ul>
+    <div class="navbar-right">
+      <ul>
+        <li><a href="#">Wallet</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#"><img src="assets/images/flag_top.png" alt="" /></a></li>
+        <li><a href="#"><img src="assets/images/chat.png" alt="" /></a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</div>
+<!-- /main navbar --> 
+
+<!-- Page container -->
+<div class="page-container"> 
+  
+  <!-- Page content -->
+  <div class="page-content"> 
+    
+    <!-- Main sidebar -->
+    <div class="sidebar sidebar-main sidebar-default">
+      <div class="sidebar-content"> 
+        
+        <!-- User menu -->
+        <div class="sidebar-user-material">
+          <div class="row">
+            <div class="col-sm-10">
+              <div class="left_icon"><img src="assets/images/round_icon.png" alt="" /></div>
+              <div class="left_text">
+                <h1>John Smith</h1>
+                <ul>
+                  <li class="sky">Premium</li>
+                  <li class="pink">VIP</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-2 text-right"> <a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a> </div>
+          </div>
+          
+          
+          <div class="navigation-wrapper collapse" id="user-nav">
+            <ul class="navigation">
+              <li><a href="#"><i class="icon-user-plus"></i> <span>My profile</span></a></li>
+              <li><a href="#"><i class="icon-coins"></i> <span>My balance</span></a></li>
+              <li><a href="#"><i class="icon-comment-discussion"></i> <span><span class="badge bg-teal-400 pull-right">58</span> Messages</span></a></li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="icon-cog5"></i> <span>Account settings</span></a></li>
+              <li><a href="#"><i class="icon-switch2"></i> <span>Logout</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- /user menu --> 
+        
+        <!-- Main navigation -->
+        <div class="sidebar-category sidebar-category-visible navigation_panel">
+          <div class="category-content no-padding">
+            <ul class="navigation navigation-main navigation-accordion">
+              
+              <!-- Main -->
+              <li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
+              <li ><a href="index-2.html"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+              <li><a href="index-2.html">Profile</a></li>
+              <li><a href="exchange.html"><i class="icon-exchange"></i> <span>Exchange</span></a></li>
+              <li> <a href="signal.html"><i class="icon-signal"></i> <span>Signal</span></a>
+                <ul>
+                  <li><a href="signal.html">Portfolio</a></li>
+                  <li><a href="#">Watchlist</a></li>
+                  <li><a href="signal_trading.html">Signal Trading</a></li>
+                  <li><a href="#">Reports</a></li>
+                </ul>
+              </li>
+              <li> <a href="lending.html"><img src="assets/images/lending.png" alt="" /> <span class="icon-lending">Lending</span></a>
+              </li>
+              <li class="active"> <a href="borrowing.html"><img src="assets/images/lending.png" alt="" /> <span class="icon-lending">Borrowing</span></a> </li>
+              <li> <a href="#"><img src="assets/images/referral.png" alt="" /> <span class="icon-lending">Referral</span></a>
+                <ul>
+                  <li><a href="#" id="referral1">Referral 1</a></li>
+                  <li><a href="#" id="referral2">Referral 2</a></li>
+                  <li><a href="#" id="referral3">Referral 3</a></li>
+                  <li><a href="#" id="referral4">Referral 4</a></li>
+                  <li><a href="#" id="referral5">Referral 5</a></li>
+                  <li><a href="#" id="referral6">Referral 6</a></li>
+                </ul>
+              </li>
+              
+              <!-- /main -->
+              
+            </ul>
+          </div>
+        </div>
+        <!-- /main navigation --> 
+        
+      </div>
+    </div>
+    <!-- /main sidebar --> 
+    
+    <!-- Main content -->
+    <div class="content-wrapper"> 
+    	<div class="content">
+        <div class="border-top-lg border-top-teal">
+          <div class="page-header page-header-default page-header-lg">
+            <div class="page-header-content">
+              <div class="page-title short">
+                <h2 class="display-inline-block">Borrowing</h2>
+                <a class="btn-gray" href="#">Class 4 lend up to $500,000</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Content area -->
+      <div class="content white_panel">
+        <div class="row">
+        	<div class="col-lg-3">
+          	<div class="panel panel-flat iv">
+              <div class="panel-body p-15">
+              	<h5 class="mt-0">Initial Value</h5>
+              	<img src="assets/images/bitto_logo.png" width="91" height="37"> 
+                <h2 class="mb-0 mt-50 text-center"><span class="text-large">1000</span> <i class="icon-lock"></i> </h2>
+                <h3 class="text-mid m-0 text-center">($21,000)</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="panel panel-flat iv">
+              <div class="panel-body text-center ">
+              	<div class="chart-container text-center">
+                  <div class="display-inline-block" id="c3-donut-chart"></div>
+                  <div class="value-price">$21,000</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-5">
+            <div class="panel panel-flat " style="min-height:366px">
+              <div class="panel-body text-center">
+              
+                <div id="topLoader" style="margin:0 auto;width:300px"> </div>
+      
+							 <script>
+                $(function() {
+                  var $topLoader = $("#topLoader").percentageLoader({
+                    width: 290, 
+                    height: 290,
+                    controllable : false,
+                    value: '+20 Points', 
+                    progress : 620, 
+												
+        
+                  });
+                });      
+               </script>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-flat ">
+              <div class="panel-body">
+                <h3 class="title m-0">Next repayment</h3>
+                <div class="row">
+                	
+                  <div class="col-lg-3">
+                    <div class="bg-grey-100 p-15 text-center">
+                      <p class="m-0">Total Outstanding</p>
+                      <p class="m-0 text-teal">£ 262.50</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="bg-grey-100 p-15 text-center">
+                      <p class="m-0">Next installment</p>
+                      <p class="m-0 text-teal">£ 262.50</p>
+                    </div>
+                  </div>   
+                  
+                  <div class="col-lg-3">
+                    <div class="bg-grey-100 p-15 text-center">
+                      <p class="m-0">Due date</p>
+                      <p class="m-0 text-teal">Sun Dec 24</p>
+                    </div>
+                  </div> 
+                  
+                  <div class="col-lg-3">
+                    <div class="bg-grey-100 p-15 text-center">
+                      <a href="#" class="btn btn-block btn-rounded btn-cus bg-teal btn-sm"> Pending confirmation <br> from lender</a>
+                    </div>
+                  </div> 
+                                   
+                </div>
+                
+                <hr class="border-dashed">
+                  
+                
+                
+                <div class="row">
+                	<div class="col-lg-7">
+                  	<h3 class="title m-0">Payment details</h3>
+                  	<div class="table-responsive">
+                      <table class="table table-condensed table-striped border-none table-responsive">
+                        <tbody>
+                          <tr>
+                            <td>Sort code</td>
+                            <td>20-04-15</td>
+                          </tr>
+                          <tr>
+                            <td>Account number</td>
+                            <td>26319755</td>
+                          </tr>
+                          <tr>
+                            <td>Quote reference</td>
+                            <td>100034</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      
+                      <ul class="pagination-flat mt-20 pagination-xs twbs-page-start pagination"><li class="prev"><a href="#" class="page-link legitRipple">Prev</a></li><li class="page"><a href="#" class="page-link legitRipple">2</a></li><li class="page active"><a href="#" class="page-link legitRipple">3</a></li><li class="page"><a href="#" class="page-link legitRipple">4</a></li><li class="page"><a href="#" class="page-link legitRipple">5</a></li><li class="next"><a href="#" class="page-link legitRipple">Next</a></li></ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-5">
+                  	If you haven't already, we recommend setting up a monthly direct debit order with your bank. That way you won't have to remember to pay every time.
+                  	<div class="row mt-15">
+                    	<div class="col-md-6">
+                      	<div class="brcode-con">
+                        	<div class="barcoode"><img src="assets/images/bc1.png" width="100" height="100"></div>
+                          <div class="barcode-comp"><img src="assets/images/bc1-c.png" width="" height=""></div>
+                          <button type="button" class="btn bg-teal btn-rounded mini">Auto</button>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                      	<div class="brcode-con">
+                        	<div class="barcoode"><img src="assets/images/bc2.png" width="100" height="100"></div>
+                          <div class="barcode-comp"><img src="assets/images/bc2-c.png" ></div>
+                          <button type="button" class="btn bg-teal btn-rounded mini">Auto</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="tabbable mt-20 tab-bordered">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#basic-tab1" data-toggle="tab" class="legitRipple" aria-expanded="true">My repayments</a></li>
+                    <li class=""><a href="#basic-tab2" data-toggle="tab" class="legitRipple" aria-expanded="false">My dispute</a></li>
+                    <li class=""><a href="#basic-tab3" data-toggle="tab" class="legitRipple" aria-expanded="false">My history</a></li>
+                  </ul>
+
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="basic-tab1">
+                    	<div class="table-responsive">
+                        <table class="table dataTable table-condensed teal border-dashed table-responsive ws-nowrap">
+                          <thead>
+                            <tr>
+                              <th>Date</th>
+                              <th>Amount</th>
+                              <th>Capital</th>
+                              <th>Interest</th>
+                              <th>Received</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>26-01-18</td>
+                              <td>£ 262.50</td>
+                              <td>£ 250</td>
+                              <td>£ 12</td>
+                              <td class="text-success"><i class="glyphicon glyphicon-ok"></i></td>
+                            </tr>
+                            <tr>
+                              <td>12-01-18</td>
+                              <td>£ 262.50</td>
+                              <td>£ 250</td>
+                              <td>£ 12</td>
+                              <td class="text-success"><i class="glyphicon glyphicon-ok"></i></td>
+                            </tr>
+                            <tr>
+                              <td>09-01-18</td>
+                              <td>£ 262.50</td>
+                              <td>£ 250</td>
+                              <td>£ 12</td>
+                              <td>Pending</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane" id="basic-tab2">
+                      Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid laeggin.
+                    </div>
+
+                    <div class="tab-pane" id="basic-tab3">
+                      Third Tab Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid laeggin.
+                    </div>
+
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- /content area --> 
+      
+    </div>
+    <!-- /main content --> 
+    
+  </div>
+  <!-- /page content --> 
+  
+</div>
+<!-- /page container --> 
+
+<!-- Footer -->
+<div class="navbar navbar-default navbar-fixed-bottom footer_panel">
+  <ul class="nav navbar-nav no-border visible-xs-block">
+    <li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second"><i class="icon-circle-up2"></i></a></li>
+  </ul>
+  <div class="navbar-collapse collapse" id="navbar-second">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="navbar-text"> <a href="#"></a> </div>
+      </div>
+      <div class="col-sm-6">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <div class="navbar-right">
+          <ul class="wifi_icon">
+            <li><a href="#"><i class="fa fa-wifi" aria-hidden="true"></i> Connected</a></li>
+          </ul>
+          <ul class="social">
+            <li class="social_icon"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li class="social_icon"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="social_icon"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /footer -->
+
+</body>
+
+<!-- Mirrored from demo.bitto.tech/borrowing.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Mar 2018 04:17:00 GMT -->
+</html>

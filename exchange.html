@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from demo.bitto.tech/exchange.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Mar 2018 04:16:36 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MITNET Exchange | ICO Bitcoin Exchange, Signal Trading</title>
+
+<!-- Global stylesheets -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<style>
+#tradingview_0a901-wrapper{
+	height:200px !important
+}
+</style>
+<!-- /global stylesheets -->
+
+<!-- Core JS files -->
+<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+<!-- /core JS files -->
+
+<!-- Theme JS files -->
+<script type="text/javascript" src="assets/js/plugins/visualization/d3/d3.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+<script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+<script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script>
+
+<!-- Theme JS files -->
+<script type="text/javascript" src="assets/js/plugins/tables/datatables/datatables.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/tables/datatables/extensions/responsive.min.js"></script>
+<script type="text/javascript" src="assets/js/core/app.js"></script>
+<script type="text/javascript" src="assets/js/pages/dashboard.js"></script>
+<script type="text/javascript" src="assets/js/pages/datatables_responsive.js"></script>
+<script type="text/javascript" src="assets/js/plugins/ui/ripple.min.js"></script>
+<!-- /theme JS files -->
+
+</head>
+
+<body class="navbar-bottom">
+
+<!-- Main navbar -->
+<div class="navbar navbar-inverse bg-indigo">
+  <div class="navbar-header"> <a class="navbar-brand" href="index-2.html"><img src="assets/images/logo.png" alt=""></a>
+    <ul class="nav navbar-nav visible-xs-block">
+      <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+      <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+    </ul>
+  </div>
+  <div class="navbar-collapse collapse" id="navbar-mobile">
+    <ul class="nav navbar-nav bitto_text">
+      <!--<li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>-->
+      <li>BITTO = $21</li>
+      <li>BTC = $17000</li>
+      <li>ETH = $700</li>
+    </ul>
+    <div class="navbar-right">
+      <ul>
+        <li><a href="#">Wallet</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#"><img src="assets/images/flag_top.png" alt="" /></a></li>
+        <li><a href="#"><img src="assets/images/chat.png" alt="" /></a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</div>
+<!-- /main navbar --> 
+
+<!-- Page container -->
+<div class="page-container"> 
+  
+  <!-- Page content -->
+  <div class="page-content"> 
+    
+    <!-- Main sidebar -->
+    <div class="sidebar sidebar-main sidebar-default">
+      <div class="sidebar-content"> 
+        
+        <!-- User menu -->
+        <div class="sidebar-user-material">
+          <div class="row">
+            <div class="col-sm-10">
+              <div class="left_icon"><img src="assets/images/round_icon.png" alt="" /></div>
+              <div class="left_text">
+                <h1>John Smith</h1>
+                <ul>
+                  <li class="sky">Premium</li>
+                  <li class="pink">VIP</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-2 text-right"> <a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a> </div>
+          </div>
+          
+          
+          <div class="navigation-wrapper collapse" id="user-nav">
+            <ul class="navigation">
+              <li><a href="#"><i class="icon-user-plus"></i> <span>My profile</span></a></li>
+              <li><a href="#"><i class="icon-coins"></i> <span>My balance</span></a></li>
+              <li><a href="#"><i class="icon-comment-discussion"></i> <span><span class="badge bg-teal-400 pull-right">58</span> Messages</span></a></li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="icon-cog5"></i> <span>Account settings</span></a></li>
+              <li><a href="#"><i class="icon-switch2"></i> <span>Logout</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- /user menu --> 
+        
+        <!-- Main navigation -->
+        <div class="sidebar-category sidebar-category-visible navigation_panel">
+          <div class="category-content no-padding">
+            <ul class="navigation navigation-main navigation-accordion">
+              
+              <!-- Main -->
+              <li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
+              <li><a href="index-2.html"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+              <li><a href="index-2.html">Profile</a></li>
+              <li class="active"><a href="exchange.html"><i class="icon-exchange"></i> <span>Exchange</span></a></li>
+              <li><a href="signal.html"><i class="icon-signal"></i> <span>Signal</span></a>
+                <ul>
+                  <li><a href="signal.html">Portfolio</a></li>
+                  <li><a href="#">Watchlist</a></li>
+                  <li><a href="signal_trading.html">Signal Trading</a></li>
+                  <li><a href="#">Reports</a></li>
+                </ul>
+              </li>
+              <li> <a href="lending.html"><img src="assets/images/lending.png" alt="" /> <span class="icon-lending">Lending</span></a>
+                
+              </li>
+              <li> <a href="borrowing.html"><img src="assets/images/lending.png" alt="" /> <span class="icon-lending">Borrowing</span></a> </li>
+              <li> <a href="#"><img src="assets/images/referral.png" alt="" /> <span class="icon-lending">Referral</span></a>
+                <ul>
+                  <li><a href="#" id="referral1">Referral 1</a></li>
+                  <li><a href="#" id="referral2">Referral 2</a></li>
+                  <li><a href="#" id="referral3">Referral 3</a></li>
+                  <li><a href="#" id="referral4">Referral 4</a></li>
+                  <li><a href="#" id="referral5">Referral 5</a></li>
+                  <li><a href="#" id="referral6">Referral 6</a></li>
+                </ul>
+              </li>
+              
+              <!-- /main -->
+              
+            </ul>
+          </div>
+        </div>
+        <!-- /main navigation --> 
+        
+      </div>
+    </div>
+    <!-- /main sidebar --> 
+    
+    <!-- Main content -->
+    <div class="content-wrapper"> 
+      <!-- Content area -->
+      <div class="content graph_panel">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="title_ber">
+              <h2>Timeline <i class="fa fa-bar-chart" aria-hidden="true"></i></h2>
+              <div class="graph panel ">
+              	<!-- TradingView Widget BEGIN -->
+								<script type="text/javascript" src="../s3.tradingview.com/tv.js"></script>
+                <script type="text/javascript">
+                new TradingView.widget({
+                  "autosize":true,
+                  //"height":320,
+									//"width":695,
+                  "symbol": "BITSTAMP:BTCUSD",
+                  "interval": "D",
+                  "timezone": "Etc/UTC",
+                  "theme": "Light",
+                  "style": "2",
+                  "locale": "en",
+                  "toolbar_bg": "#fff",
+                  "enable_publishing": false,
+                  "save_image": false,
+                  "hideideas": true
+                });
+                </script>
+                <!-- TradingView Widget END -->
+
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="exchange_box panel">
+              <div class="bitto"><img src="assets/images/bitto_logo.png" alt="" /></div>
+              <div class="border">
+                <div class="row">
+                  <div class="col-sm-7 col-xs-7">
+                    <h3 style="color:#478947;">Last</h3>
+                  </div>
+                  <div class="col-sm-4 col-xs-4">
+                    <p>$21.45</p>
+                    <p><i class="fa fa-btc"></i> 0.00200146</p>
+                  </div>
+                  <div class="col-sm-1 col-xs-1">
+                    <div class="arrow_con"> <i class="fa fa-arrow-up" aria-hidden="true"></i> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border">
+                <div class="row">
+                  <div class="col-sm-7 col-xs-7">
+                    <h3><i class="fa fa-btc"></i> VOL</h3>
+                  </div>
+                  <div class="col-sm-4 col-xs-4">
+                    <p>$6900952.42</p>
+                    <p><i class="fa fa-btc"></i> 644.0073</p>
+                  </div>
+                  <div class="col-sm-1 col-xs-1">
+                    <div class="arrow_con"> <i class="fa fa-arrow-down" aria-hidden="true"></i> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border">
+                <div class="row">
+                  <div class="col-sm-7 col-xs-7">
+                    <h3 style="color:#b94c48;">BID</h3>
+                  </div>
+                  <div class="col-sm-4 col-xs-4">
+                    <p>$21.43</p>
+                    <p><i class="fa fa-btc"></i> 0.00200001</p>
+                  </div>
+                  <div class="col-sm-1 col-xs-1">
+                    <div class="arrow_con"> <i class="fa fa-arrow-up" aria-hidden="true"></i> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border">
+                <div class="row">
+                  <div class="col-sm-7 col-xs-7">
+                    <h3 style="color:#b94c48;" class="red_text">ASK</h3>
+                  </div>
+                  <div class="col-sm-4 col-xs-4">
+                    <p>$21.45</p>
+                    <p><i class="fa fa-btc"></i>  0.00200146</p>
+                  </div>
+                  <div class="col-sm-1 col-xs-1">
+                    <div class="arrow_con"> <i class="fa fa-arrow-up" aria-hidden="true"></i> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border">
+                <div class="row">
+                  <div class="col-sm-7 col-xs-7">
+                    <h3 style="color:#000;">24H HIGH</h3>
+                  </div>         
+                  <div class="col-sm-4 col-xs-4">
+                    <p>$23.57</p>
+                    <p><i class="fa fa-btc"></i> 0.00219999</p>
+                  </div>
+                  <div class="col-sm-1 col-xs-1">
+                    <div class="arrow_con"> <i class="fa fa-minus" aria-hidden="true"></i> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border">
+                <div class="row">
+                  <div class="col-sm-7 col-xs-7">
+                    <h3 style="color:#000;">24H LOW</h3>
+                  </div>
+                  <div class="col-sm-4 col-xs-4">
+                    <p>$21.02</p>
+                    <p><i class="fa fa-btc"></i> 0.00196126</p>
+                  </div>
+                  <div class="col-sm-1 col-xs-1">
+                    <div class="arrow_con"> <i class="fa fa-minus" aria-hidden="true"></i> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab_box">
+          <div class="row">
+            <div class="col-sm-7">
+              <div class="panel-body">
+                <div class="tabbable">
+                  <ul class="nav nav-tabs plain">
+                    <li class="active"><a href="#exchange-tab" data-toggle="tab" class="legitRipple">Exchange</a></li>
+                    <li><a href="#margin-tab" data-toggle="tab" class="legitRipple">Margin</a></li>
+                    <li><a href="#signal-tab" data-toggle="tab" class="legitRipple">Signal</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="exchange-tab">
+                      <div class="inner_tab">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="left_panel">
+                              <div class="row">
+                                <div class="col-lg-4">
+                                  <h2>Buy</h2>
+                                </div>
+                                <div class="col-lg-8 text-right">
+                                  <p>BTC Balance: 0.00000000</p>
+                                </div>
+                              </div>
+                              <form class="form-horizontal">
+                                <div class="form-group m-0">
+                                  <label for="" class="col-sm-3 control-label">Price</label>
+                                  <div class="col-sm-9">
+                                    <input type="number" class=" form-control-bordered" id="" placeholder="BTC">
+                                  </div>
+                                </div>
+                                <div class="form-group m-0">
+                                  <label for="" class="col-sm-3 control-label">Amount</label>
+                                  <div class="col-sm-9">
+                                    <input type="text" class="form-control-bordered" id="" placeholder="BITTO">
+                                    <div class="text_box">
+                                      <div class="p"><a href="#" class="small_box">20%</a></div>
+                                      <div class="p"><a href="#" class="small_box">50%</a></div>
+                                      <div class="p"><a href="#" class="small_box">70%</a></div>
+                                      <div class="p"><a href="#" class="small_box">100%</a></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-group m-0">
+                                  <label for="" class="col-sm-3 control-label">Total</label>
+                                  <div class="col-sm-9">
+                                    <input type="password" class="form-control-bordered" id="" placeholder="BTC">
+                                  </div>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-block bg-teal">Buy</button>
+                              </form>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 right_box">
+                            <div class="left_panel">
+                              <div class="row">
+                                <div class="col-lg-4">
+                                  <h2>Sell</h2>
+                                </div>
+                                <div class="col-lg-8 text-right">
+                                  <p>BTC Balance: 0.00000000</p>
+                                </div>
+                              </div>
+                              <form class="form-horizontal">
+                                <div class="form-group m-0">
+                                  <label for="" class="col-sm-3 control-label">Price</label>
+                                  <div class="col-sm-9">
+                                    <input type="number" class=" form-control-bordered" id="" placeholder="BTC">
+                                  </div>
+                                </div>
+                                <div class="form-group m-0">
+                                  <label for="" class="col-sm-3 control-label">Amount</label>
+                                  <div class="col-sm-9">
+                                    <input type="text" class="form-control-bordered" id="" placeholder="BITTO">
+                                    <div class="text_box">
+                                      <div class="p"><a href="#" class="small_box">20%</a></div>
+                                      <div class="p"><a href="#" class="small_box">50%</a></div>
+                                      <div class="p"><a href="#" class="small_box">70%</a></div>
+                                      <div class="p"><a href="#" class="small_box">100%</a></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-group m-0">
+                                  <label for="" class="col-sm-3 control-label">Total</label>
+                                  <div class="col-sm-9">
+                                    <input type="password" class="form-control-bordered" id="" placeholder="BTC">
+                                  </div>
+                                </div>
+                                <button type="button" class="btn btn-warning btn-block">Sell</button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane bg-white" id="margin-tab"> 
+                        <div class="inner_tab"></div>
+                     </div>
+                    <div class="tab-pane bg-white" id="signal-tab">
+                        <div class="inner_tab"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div class="table_panel panel ">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <h1>BID</h1>
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <td><a href="#" style="color:#27a69b">0.000119</a></a></td>
+                          <td align="right">5.7%</td>
+                          <td align="right">0.000125</td>
+                        </tr>
+                        <tr>
+                          <td><a href="#" style="color:#27a69b">0.001115</a></a></td>
+                          <td align="right">40.1%</td>
+                          <td align="right">0.001430</td>
+                        </tr>
+                        <tr>
+                          <td><a href="#" style="color:#27a69b">0.290316</a></td>
+                          <td align="right">-0.8%</td>
+                          <td align="right">0.091000</td>
+                        </tr>
+                        <tr>
+                          <td><a href="#" style="color:#27a69b">0.577690</a></td>
+                          <td align="right">-0.2%</td>
+                          <td align="right">0.000051</td>
+                        </tr>
+                        <tr>
+                          <td><a href="#" style="color:#27a69b">0.209928</a></td>
+                          <td align="right">2.3%</td>
+                          <td align="right">0.000003</td>
+                        </tr>
+                        <tr>
+                          <td><a href="#" style="color:#27a69b">0.284000</a></td>
+                          <td align="right">5.9%</td>
+                          <td align="right">0.000043</td>
+                        </tr>
+                        <tr>
+                          <td><a href="#" style="color:#27a69b">0.167144</a></td>
+                          <td align="right">-2.6%</td>
+                          <td align="right">0.000008</td>
+                        </tr>
+                        <tr>
+                          <td><a href="#" style="color:#27a69b">0.148572</a></td>
+                          <td align="right">2.2%</td>
+                          <td align="right">0.000032</td>
+                        </tr>
+                        <tr>
+                          <td><a href="#" style="color:#27a69b">0.145856</a></td>
+                          <td align="right">-8.5%</td>
+                          <td align="right">0.005117</td>
+                        </tr>
+                        <tr>
+                          <td><a href="#" style="color:#27a69b">0.144436</a></td>
+                          <td align="right">1.8%</td>
+                          <td align="right">0.009200</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-sm-6">
+                    <h1>ASK</h1>
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <td><a href="#" style="color:#b94c48;">0.118192</a></td>
+                          <td align="right">-7.4%</td>
+                          <td align="right">0.00005835</td>
+                        </tr>
+                        <tr>
+                          <td><a href="#" style="color:#b94c48;">0.010716</a></td>
+                          <td align="right">-3.5%</td>
+                          <td align="right">0.01125099</td>
+                        </tr>
+                        <tr>
+                          <td><a href="#" style="color:#b94c48;">0.147915</a></td>
+                          <td align="right">-0.8%</td>
+                          <td align="right">0.15175541</td>
+                        </tr>
+                        <tr>
+                          <td><a href="#" style="color:#b94c48;">0.001103</a></td>
+                          <td align="right">-0.8%</td>
+                          <td align="right">0.00115152</td>
+                        </tr>
+                        <tr>
+                          <td><a href="#" style="color:#b94c48;">0.000086</a></td>
+                          <td align="right">-1.2%</td>
+                          <td align="right">0.00009250</td>
+                        </tr>
+                        <tr>
+                          <td><a href="#" style="color:#b94c48;">0.000138</a></td>
+                          <td align="right">0.1%</td>
+                          <td align="right">0.00158131</td>
+                        </tr>
+                        <tr>
+                          <td><a href="#" style="color:#b94c48;">0.000009</a></td>
+                          <td align="right">-9.9%</td>
+                          <td align="right">0.00001340</td>
+                        </tr>
+                        <tr>
+                          <td><a href="#" style="color:#b94c48;">0.016488</a></td>
+                          <td align="right">1.1%</td>
+                          <td align="right">0.01670000</td>
+                        </tr>
+                        <tr>
+                          <td><a href="#" style="color:#b94c48;">0.002625</a></td>
+                          <td align="right">-0.2%</td>
+                          <td align="right">0.00271100</td>
+                        </tr>
+                        <tr>
+                          <td><a href="#" style="color:#b94c48;">0.001997</a></td>
+                          <td align="right">4.4%</td>
+                          <td align="right">0.00219999</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order_panel">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="panel-body">
+                <div class="tabbable">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <ul class="nav nav-tabs">
+                        <li class="active"><a href="#orders-tab" data-toggle="tab">Open Orders</a></li>
+                        <li><a href="#history-tab" data-toggle="tab">My 24h Order History</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="text_right">
+                        <label>
+                          <input type="checkbox">
+                          Hide Other Palrs </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content">
+                  <div class="tab-pane active bg-white table-responsive " id="orders-tab">
+                    <table class="table dataTable table-bordered table-condensed ">
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Pair</th>
+                          <th>Type</th>
+                          <th>Side</th>
+                          <th>Price</th>
+                          <th>Amount</th>
+                          <th>Filled%</th>
+                          <th>Total</th>
+                          <th>Trigger Conditions</th>
+                          <th class="dropdown"> <a href="#" class="dropdown-toggle" id="drop1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Cancel All <span class="caret"></span> </a>
+                            <ul class="dropdown-menu" aria-labelledby="drop1">
+                              <li><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                            </ul>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      	<tr>
+                        	<td colspan="10" class="text-center">You have no open order</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="tab-pane bg-white" id="history-tab"> 
+                      <table class="table dataTable table-bordered table-condensed ">
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Pair</th>
+                          <th>Type</th>
+                          <th>USide</th>
+                          <th>Price</th>
+                          <th>Amount</th>
+                          <th>Flied%</th>
+                          <th> Total</th>
+                          <th>Trigger Condoons</th>
+                          <th class="dropdown"> <a href="#" class="dropdown-toggle" id="drop1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Cancel All <span class="caret"></span> </a>
+                            <ul class="dropdown-menu" aria-labelledby="drop1">
+                              <li><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                            </ul>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td colspan="10" class="text-center">You have no open order</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /content area --> 
+    
+  </div>
+  <!-- /main content --> 
+  
+</div>
+<!-- /page content -->
+
+</div>
+<!-- /page container --> 
+
+<!-- Footer -->
+<div class="navbar navbar-default navbar-fixed-bottom footer_panel">
+  <ul class="nav navbar-nav no-border visible-xs-block">
+    <li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second"><i class="icon-circle-up2"></i></a></li>
+  </ul>
+  <div class="navbar-collapse collapse" id="navbar-second">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="navbar-text"> <a href="#"></a> </div>
+      </div>
+      <div class="col-sm-6">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <div class="navbar-right">
+          <ul class="wifi_icon">
+            <li><a href="#"><i class="fa fa-wifi" aria-hidden="true"></i> Connected</a></li>
+          </ul>
+          <ul class="social">
+            <li class="social_icon"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li class="social_icon"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="social_icon"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /footer -->
+
+</body>
+
+<!-- Mirrored from demo.bitto.tech/exchange.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Mar 2018 04:16:44 GMT -->
+</html>

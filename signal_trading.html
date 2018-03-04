@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from demo.bitto.tech/signal_trading.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Mar 2018 04:16:49 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MITNet Exchange</title>
+
+<!-- Global stylesheets -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<style>
+#tradingview_0a901-wrapper{
+	height:200px !important
+}
+</style>
+<!-- /global stylesheets -->
+
+<!-- Core JS files -->
+<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+<!-- /core JS files -->
+
+<!-- Theme JS files -->
+<script type="text/javascript" src="assets/js/plugins/visualization/d3/d3.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+<script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+<script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script>
+
+<!-- Theme JS files -->
+<script type="text/javascript" src="assets/js/plugins/tables/datatables/datatables.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/tables/datatables/extensions/responsive.min.js"></script>
+
+
+<script type="text/javascript" src="assets/js/pages/start-rating.js"></script>
+<script type="text/javascript" src="assets/js/core/app.js"></script>
+<script type="text/javascript" src="assets/js/pages/signal-treding.js"></script>
+<script type="text/javascript" src="assets/js/pages/datatables_responsive.js"></script>
+
+
+<!-- /theme JS files -->
+
+</head>
+
+<body class="navbar-bottom">
+
+<!-- Main navbar -->
+<div class="navbar navbar-inverse bg-indigo">
+  <div class="navbar-header"> <a class="navbar-brand" href="index-2.html"><img src="assets/images/logo.png" alt=""></a>
+    <ul class="nav navbar-nav visible-xs-block">
+      <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+      <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+    </ul>
+  </div>
+  <div class="navbar-collapse collapse" id="navbar-mobile">
+    <ul class="nav navbar-nav bitto_text">
+      <!--<li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>-->
+      <li>Bitto = $12</li>
+      <li>BTC = $17000</li>
+      <li>ETH = $700</li>
+    </ul>
+    <div class="navbar-right">
+      <ul>
+        <li><a href="#">Wallet</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#"><img src="assets/images/flag_top.png" alt="" /></a></li>
+        <li><a href="#"><img src="assets/images/chat.png" alt="" /></a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</div>
+<!-- /main navbar --> 
+
+<!-- Page container -->
+<div class="page-container"> 
+  
+  <!-- Page content -->
+  <div class="page-content"> 
+    
+    <!-- Main sidebar -->
+    <div class="sidebar sidebar-main sidebar-default">
+      <div class="sidebar-content"> 
+        
+        <!-- User menu -->
+        <div class="sidebar-user-material">
+          <div class="row">
+            <div class="col-sm-10">
+              <div class="left_icon"><img src="assets/images/round_icon.png" alt="" /></div>
+              <div class="left_text">
+                <h1>John Smith</h1>
+                <ul>
+                  <li class="sky">Premium</li>
+                  <li class="pink">VIP</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-2 text-right"> <a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a> </div>
+          </div>
+          
+          
+          <div class="navigation-wrapper collapse" id="user-nav">
+            <ul class="navigation">
+              <li><a href="#"><i class="icon-user-plus"></i> <span>My profile</span></a></li>
+              <li><a href="#"><i class="icon-coins"></i> <span>My balance</span></a></li>
+              <li><a href="#"><i class="icon-comment-discussion"></i> <span><span class="badge bg-teal-400 pull-right">58</span> Messages</span></a></li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="icon-cog5"></i> <span>Account settings</span></a></li>
+              <li><a href="#"><i class="icon-switch2"></i> <span>Logout</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- /user menu --> 
+        
+        <!-- Main navigation -->
+        <div class="sidebar-category sidebar-category-visible navigation_panel">
+          <div class="category-content no-padding">
+            <ul class="navigation navigation-main navigation-accordion">
+              
+              <!-- Main -->
+              <li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
+              <li><a href="index-2.html"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+              <li><a href="index-2.html">Profile</a></li>
+              <li><a href="exchange.html"><i class="icon-exchange"></i> <span>Exchange</span></a></li>
+              <li><a href="signal.html"><i class="icon-signal"></i> <span>Signal</span></a>
+                <ul>
+                  <li><a href="signal.html">Portfolio</a></li>
+                  <li><a href="#">Watchlist</a></li>
+                  <li class="active"><a href="signal_trading.html">Signal Trading</a></li>
+                  <li><a href="#">Reports</a></li>
+                </ul>
+              </li>
+              <li> <a href="lending.html"><img src="assets/images/lending.png" alt="" /> <span class="icon-lending">Lending</span></a>
+                
+              </li>
+              <li> <a href="borrowing.html"><img src="assets/images/lending.png" alt="" /> <span class="icon-lending">Borrowing</span></a> </li>
+              <li> <a href="#"><img src="assets/images/referral.png" alt="" /> <span class="icon-lending">Referral</span></a>
+                <ul>
+                  <li><a href="#" id="referral1">Referral 1</a></li>
+                  <li><a href="#" id="referral2">Referral 2</a></li>
+                  <li><a href="#" id="referral3">Referral 3</a></li>
+                  <li><a href="#" id="referral4">Referral 4</a></li>
+                  <li><a href="#" id="referral5">Referral 5</a></li>
+                  <li><a href="#" id="referral6">Referral 6</a></li>
+                </ul>
+              </li>
+              
+              <!-- /main -->
+              
+            </ul>
+          </div>
+        </div>
+        <!-- /main navigation -->         
+      </div>
+    </div>
+    <!-- /main sidebar --> 
+    
+    <!-- Main content -->
+    <div class="content-wrapper"> 
+      <!-- Content area -->
+      <div class="content graph_panel">
+        <div class="trader_wrp">
+          <ul>
+            <li><h2>Signal Traders</h2></li>
+            <li>
+               <form class="navbar-form" role="search">
+                <div class="input-group add-on">
+                  <input class="form-control" placeholder="People Search / Performance" name="srch-term" id="srch-term" type="text">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                  </div>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>        
+        <div class="rating_panel">
+          <div class="row">
+            <div class="col-sm-2">
+              <ul class="search_text">
+                <li>Search Traders</li>
+                <li>Rating</li>
+              </ul>
+            </div>
+            <div class="col-sm-2">
+              <div class="rating_box">
+              
+                <section class='rating-widget'>
+                  <!-- Rating Stars Box -->
+                  <div class='rating-stars '>
+                    <ul class='stars text-center'>
+                      <li class='star selected' title='Poor' data-value='1'>
+                        <i class='fa fa-star fa-fw'></i>
+                      </li>
+                      <li class='star selected' title='Fair' data-value='2'>
+                        <i class='fa fa-star fa-fw'></i>
+                      </li>
+                      <li class='star selected' title='Good' data-value='3'>
+                        <i class='fa fa-star fa-fw'></i>
+                      </li>
+                      <li class='star ' title='Excellent' data-value='4'>
+                        <i class='fa fa-star fa-fw'></i>
+                      </li>
+                      <li class='star ' title='WOW!!!' data-value='5'>
+                        <i class='fa fa-star fa-fw'></i>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+                <p style="text-align: center;"><a href="#" class="clear-star">Clear</a></p>
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <ul class="followr_text">
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Followers
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Win%
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Max DD
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="advanced_text"><a href="#">Advanced Search</a></li>
+          </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="rating_wrp">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="table-responsive">
+               <table class="table panel">
+                  <tbody> 
+                    <tr> 
+                      <td style="width: 100px;">
+                      	<img src="assets/images/wan.png" alt="" />
+                        <p class="text-center"><strong>T1</strong> Crypto Signal King</p>
+                        
+                      </td> 
+                      <td class="votes text-left" style="width: 150px;" nowrap>
+                        <div class="green_box">Sponsored</div>
+                        <ul class="icon_box">
+                          <li><a href="#"><img src="assets/images/right_icon3.png" alt=""></a></li>
+                          <li><a href="#"><img src="assets/images/right_icon4.png" alt=""></a></li>
+                        </ul>
+                        <div class="star">
+                        	<section class='rating-widget'>
+                          <!-- Rating Stars Box -->
+                          <div class='rating-stars text-left'>
+                            <ul class='stars'>
+                              <li class='star selected' title='Poor' data-value='1'>
+                                <i class='fa fa-star fa-fw'></i>
+                              </li>
+                              <li class='star selected' title='Fair' data-value='2'>
+                                <i class='fa fa-star fa-fw'></i>
+                              </li>
+                              <li class='star selected' title='Good' data-value='3'>
+                                <i class='fa fa-star fa-fw'></i>
+                              </li>
+                              <li class='star ' title='Excellent' data-value='4'>
+                                <i class='fa fa-star fa-fw'></i>
+                              </li>
+                              <li class='star ' title='WOW!!!' data-value='5'>
+                                <i class='fa fa-star fa-fw'></i>
+                              </li>
+                            </ul>
+                          </div>
+                        </section>
+                        </div>
+                        <p style="color: #000; font-weight: 600; font-size: 12px;">20 votes</p>
+                      </td> 
+                      <td style="width: 100px;">
+                        <div class="graph_con">
+                        	<div class="chart-container">
+                            <div class="chart" id="new-visitors"></div>
+                          </div>
+                        </div>
+                      </td> 
+                      <td style="width: 150px; text-align: center;">
+                        <div class=" text_panel">
+                          <p style=" margin-bottom: 0px;">Total Days Trade</p>
+                          <p style="font-weight: 600; margin-bottom: 0px;">50 D</p>
+                        </div>
+                        <div class=" text_panel">
+                          <p style=" margin-bottom: 0px;">Amount Following</p>
+                          <p style="font-weight: 600; margin-bottom: 0px;">11 BTC</p>
+                        </div>
+                      </td> 
+                      <td style="width: 230px; text-align: center;">
+                        <div class="left_panel">
+                          <p style=" margin-bottom: 0px;">Max DD %</p>
+                          <p style="font-weight: 600; margin-bottom: 0px;">3.2%</p>
+                        </div>
+                        <div class="right_panel">
+                          <p style=" margin-bottom: 0px;">Win %</p>
+                          <p style="font-weight: 600; margin-bottom: 0px;">3.2%</p>
+                        </div>
+                        <div class="profit">
+                            <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Live Followers Profit
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="btc_text">
+                            <p style="font-weight: 600; margin-bottom: 0px;">3.726 BTC</p>
+                         </div>
+                      </td>
+                      <td style="width: 150px; text-align: center;">
+                        <div class="text_wrp">
+                          <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Last 7 days
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu5">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                              </ul>
+                            </div>
+                            <p style="color:#4CAF50; font-weight: 600;">42%</p>
+                            <p style=" margin-bottom: 0px;">Followers</p>
+                            <p style="font-weight: 600; margin-bottom: 0px;">30</p>
+                          </div>
+                      </td>
+                      <td>
+                        <div class="watchlist_panel">
+                          <a href="#" class="btn btn-success btn-block">Follow</a>                         
+                        </div>
+                         <div class="watchlist_wrp">
+                           <ul>
+                             <li><a href="#"><img src="assets/images/watchlist.png" alt=""</a></li>
+                             <li><p>Add to <br>watchlist</p></li>
+                           </ul>
+                         </div>
+                      </td>
+                    </tr>  
+                 </tbody> 
+               </table>
+               </div>
+            </div>            
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="table-responsive">
+               <table class="table panel">
+                  <tbody> 
+                    <tr> 
+                      <td style="width: 100px;">
+                      	<img src="assets/images/neeson.png" alt="" />
+                        <p class="text-center"><strong>T2</strong> Highest Crypto Signal</p>
+                        
+                      </td> 
+                      <td class="votes" style="width: 150px;" nowrap>
+                        <ul class="icon_box">
+                          <li><a href="#"><img src="assets/images/right_icon3.png" alt=""></a></li>
+                          <li><a href="#"><img src="assets/images/right_icon4.png" alt=""></a></li>
+                        </ul>
+                        <div class="star">
+                        	<section class='rating-widget'>
+                            <!-- Rating Stars Box -->
+                            <div class='rating-stars text-center'>
+                              <ul class='stars'>
+                                <li class='star selected' title='Poor' data-value='1'>
+                                  <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star selected' title='Fair' data-value='2'>
+                                  <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star selected' title='Good' data-value='3'>
+                                  <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star selected' title='Excellent' data-value='4'>
+                                  <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star selected' title='WOW!!!' data-value='5'>
+                                  <i class='fa fa-star fa-fw'></i>
+                                </li>
+                              </ul>
+                            </div>
+                          </section>
+                        </div>
+                        <p style="color: #000; font-weight: 600; font-size: 12px;">150 votes</p>
+                      </td> 
+                      <td style="width: 100px;">
+                        <div class="graph_con">
+                        	<div class="chart-container">
+                            <div class="chart" id="new-visitors2"></div>
+                          </div>
+                        </div>
+                      </td> 
+                      <td style="width: 150px; text-align: center;">
+                        <div class=" text_panel">
+                          <p style=" margin-bottom: 0px;">Total Days Trade</p>
+                          <p style="font-weight: 600; margin-bottom: 0px;">180 D</p>
+                        </div>
+                        <div class=" text_panel">
+                          <p style=" margin-bottom: 0px;">Amount Following</p>
+                          <p style="font-weight: 600; margin-bottom: 0px;">22 BTC</p>
+                        </div>
+                      </td> 
+                      <td style="width: 230px; text-align: center;">
+                        <div class="left_panel">
+                          <p style=" margin-bottom: 0px;">Max DD %</p>
+                          <p style="font-weight: 600; margin-bottom: 0px;">7%</p>
+                        </div>
+                        <div class="right_panel">
+                          <p style=" margin-bottom: 0px;">Win %</p>
+                          <p style="font-weight: 600; margin-bottom: 0px;">80%</p>
+                        </div>
+                        <div class="profit">
+                            <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Live Followers Profit
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="btc_text">
+                            <p style="font-weight: 600; margin-bottom: 0px;">2.75 BTC</p>
+                         </div>
+                      </td>
+                      <td style="width: 150px; text-align: center;">
+                        <div class="text_wrp">
+                          <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Last 7 days
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu5">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                              </ul>
+                            </div>
+                            <p style="color:#4CAF50; font-weight: 600;">25%</p>
+                            <p style=" margin-bottom: 0px;">Followers</p>
+                            <p style="font-weight: 600; margin-bottom: 0px;">60</p>
+                          </div>
+                      </td>
+                      <td>
+                        <div class="watchlist_panel">
+                          <a href="#" class="btn btn-success btn-block">Follow</a>                         
+                        </div>
+                         <div class="watchlist_wrp">
+                           <ul>
+                             <li><a href="#"><img src="assets/images/watchlist.png" alt=""</a></li>
+                             <li><p>Add to <br>watchlist</p></li>
+                           </ul>
+                         </div>
+                      </td>
+                    </tr>  
+                 </tbody> 
+               </table>
+               </div>
+            </div>            
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="table-responsive">
+               <table class="table panel">
+                  <tbody> 
+                    <tr> 
+                      <td style="width: 100px;">
+                      	<img src="assets/images/simon.png" alt="" />
+                      	<p class="text-center"><strong>T3</strong> Whales Crypto</p>
+                      </td> 
+                      <td class="votes" style="width:150px;" nowrap>
+                        <ul class="icon_box">
+                          <li><a href="#"><img src="assets/images/right_icon3.png" alt=""></a></li>
+                          <li><a href="#"><img src="assets/images/right_icon4.png" alt=""></a></li>
+                        </ul>
+                        <div class="star">
+                          <section class='rating-widget'>
+                            <!-- Rating Stars Box -->
+                            <div class='rating-stars text-center'>
+                              <ul class='stars'>
+                                <li class='star selected' title='Poor' data-value='1'>
+                                  <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star selected' title='Fair' data-value='2'>
+                                  <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star selected' title='Good' data-value='3'>
+                                  <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star ' title='Excellent' data-value='4'>
+                                  <i class='fa fa-star fa-fw'></i>
+                                </li>
+                                <li class='star ' title='WOW!!!' data-value='5'>
+                                  <i class='fa fa-star fa-fw'></i>
+                                </li>
+                              </ul>
+                            </div>
+                          </section>
+                        </div>
+                        <p style="color: #000; font-weight: 600; font-size: 12px;">60 votes</p>
+                      </td> 
+                      <td style="width: 100px;">
+                        <div class="graph_con">
+                        	<div class="chart-container">
+                            <div class="chart" id="new-visitors3"></div>
+                          </div>
+                        </div>
+                      </td> 
+                      <td style="width: 150px; text-align: center;">
+                        <div class=" text_panel">
+                          <p style=" margin-bottom: 0px;">Total Days Trade</p>
+                          <p style="font-weight: 600; margin-bottom: 0px;">340 D</p>
+                        </div>
+                        <div class=" text_panel">
+                          <p style=" margin-bottom: 0px;">Amount Following</p>
+                          <p style="font-weight: 600; margin-bottom: 0px;">30 BTC</p>
+                        </div>
+                      </td> 
+                      <td style="width: 230px; text-align: center;">
+                        <div class="left_panel">
+                          <p style=" margin-bottom: 0px;">Max DD %</p>
+                          <p style="font-weight: 600; margin-bottom: 0px;">7.8%</p>
+                        </div>
+                        <div class="right_panel">
+                          <p style=" margin-bottom: 0px;">Win %</p>
+                          <p style="font-weight: 600; margin-bottom: 0px;">87%</p>
+                        </div>
+                        <div class="profit">
+                            <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Live Followers Profit
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="btc_text">
+                            <p style="font-weight: 600; margin-bottom: 0px;">3.9 BTC</p>
+                         </div>
+                      </td>
+                      <td style="width: 150px; text-align: center;">
+                        <div class="text_wrp">
+                          <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Last 7 days
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu5">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                              </ul>
+                            </div>
+                            <p style="color:#4CAF50; font-weight: 600;">26%</p>
+                            <p style=" margin-bottom: 0px;">Followers</p>
+                            <p style="font-weight: 600; margin-bottom: 0px;">30</p>
+                          </div>
+                      </td>
+                      <td>
+                        <div class="watchlist_panel">
+                          <a href="#" class="btn btn-success btn-block">Follow</a>                         
+                        </div>
+                         <div class="watchlist_wrp">
+                           <ul>
+                             <li><a href="#"><img src="assets/images/watchlist.png" alt=""</a></li>
+                             <li><p>Add to <br>watchlist</p></li>
+                           </ul>
+                         </div>
+                      </td>
+                    </tr>  
+                 </tbody> 
+               </table>
+               </div>
+            </div>            
+          </div>
+        </div>
+                
+      </div>
+    </div>
+    <!-- /content area --> 
+    
+  </div>
+  <!-- /main content --> 
+  
+</div>
+<!-- /page content -->
+
+</div>
+<!-- /page container --> 
+
+<!-- Footer -->
+<div class="navbar navbar-default navbar-fixed-bottom footer_panel">
+  <ul class="nav navbar-nav no-border visible-xs-block">
+    <li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second"><i class="icon-circle-up2"></i></a></li>
+  </ul>
+  <div class="navbar-collapse collapse" id="navbar-second">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="navbar-text"> <a href="#"></a> </div>
+      </div>
+      <div class="col-sm-6">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <div class="navbar-right">
+          <ul class="wifi_icon">
+            <li><a href="#"><i class="fa fa-wifi" aria-hidden="true"></i> Connected</a></li>
+          </ul>
+          <ul class="social">
+            <li class="social_icon"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li class="social_icon"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="social_icon"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /footer -->
+
+</body>
+
+<!-- Mirrored from demo.bitto.tech/signal_trading.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Mar 2018 04:16:51 GMT -->
+</html>

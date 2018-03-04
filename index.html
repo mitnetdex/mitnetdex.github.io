@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from demo.bitto.tech/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Mar 2018 04:14:33 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bitto Exchange | ICO Bitcoin Exchange, Signal Trading</title>
+
+<!-- Global stylesheets -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+<link href="assets/css/flexslider.css" rel="stylesheet" type="text/css">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!-- /global stylesheets -->
+
+<!-- Core JS files -->
+<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+<!-- /core JS files -->
+
+<!-- Theme JS files -->
+<script type="text/javascript" src="assets/js/plugins/visualization/d3/d3.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+<script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+<script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script>
+
+<!-- Theme JS files -->
+<script type="text/javascript" src="assets/js/plugins/tables/datatables/datatables.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/tables/datatables/extensions/responsive.min.js"></script>
+<script type="text/javascript" src="assets/js/core/app.js"></script>
+<script type="text/javascript" src="assets/js/pages/dashboard.js"></script>
+<script type="text/javascript" src="assets/js/pages/datatables_responsive.js"></script>
+<script type="text/javascript" src="assets/js/pages/flexslider.js"></script>
+<script type="text/javascript" src="assets/js/plugins/ui/ripple.min.js"></script>
+<!-- /theme JS files -->
+
+<script>
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    animationLoop: true,
+		controlNav: false,               //Boolean: Create navigation for paging control of each slide? Note: Leave true for manualControls usage
+    directionNav: false, 
+		slideshowSpeed: 3000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+    animationSpeed: 600, 
+  });
+});
+</script>
+
+</head>
+
+<body class="navbar-bottom">
+
+<!-- Main navbar -->
+<div class="navbar navbar-inverse bg-indigo">
+  <div class="navbar-header"> <a class="navbar-brand" href="index-2.html"><img src="assets/images/logo.png" alt=""></a>
+    <ul class="nav navbar-nav visible-xs-block">
+      <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+      <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+    </ul>
+  </div>
+  <div class="navbar-collapse collapse" id="navbar-mobile">
+    <ul class="nav navbar-nav bitto_text">
+      <!--<li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>-->
+      
+      <li>MITNet Centralized Exchange</li>
+      <li>ETH = Launching Soon !</li>
+    </ul>
+    <div class="navbar-right">
+      <ul>
+        <li><a href="#">Wallet</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#"><img src="assets/images/flag_top.png" alt="" /></a></li>
+        <li><a href="#"><img src="assets/images/chat.png" alt="" /></a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- /main navbar --> 
+
+<!-- Page container -->
+<div class="page-container"> 
+  
+  <!-- Page content -->
+  <div class="page-content"> 
+    
+    <!-- Main sidebar -->
+    <div class="sidebar sidebar-main sidebar-default">
+      <div class="sidebar-content"> 
+        
+        <!-- User menu -->
+        <div class="sidebar-user-material">
+          <div class="row">
+            <div class="col-sm-10">
+              <div class="left_icon"><img src="assets/images/round_icon.png" alt="" /></div>
+              <div class="left_text">
+                <h1>John Smith</h1>
+                <ul>
+                  <li class="sky">Premium</li>
+                  <li class="pink">VIP</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-2 text-right"> <a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a> </div>
+          </div>
+          
+          
+          <div class="navigation-wrapper collapse" id="user-nav">
+            <ul class="navigation">
+              <li><a href="#"><i class="icon-user-plus"></i> <span>My profile</span></a></li>
+              <li><a href="#"><i class="icon-coins"></i> <span>My balance</span></a></li>
+              <li><a href="#"><i class="icon-comment-discussion"></i> <span><span class="badge bg-teal-400 pull-right">58</span> Messages</span></a></li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="icon-cog5"></i> <span>Account settings</span></a></li>
+              <li><a href="#"><i class="icon-switch2"></i> <span>Logout</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- /user menu --> 
+        
+        <!-- Main navigation -->
+        <div class="sidebar-category sidebar-category-visible navigation_panel">
+          <div class="category-content no-padding">
+            <ul class="navigation navigation-main navigation-accordion">
+              
+              <!-- Main -->
+              <li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
+              <li class="active"><a href="index-2.html"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+              <li><a href="index-2.html">Profile</a></li>
+              <li><a href="exchange.html"><i class="icon-exchange"></i> <span>Exchange</span></a></li>
+              <li> <a href="signal.html"><i class="icon-signal"></i> <span>Signal</span></a>
+                <ul>
+                  <li><a href="signal.html">Portfolio</a></li>
+                  <li><a href="#">Watchlist</a></li>
+                  <li><a href="signal_trading.html">Signal Trading</a></li>
+                  <li><a href="#">Reports</a></li>
+                </ul>
+              </li>
+              <li> <a href="lending.html"><img src="assets/images/lending.png" alt="" /> <span class="icon-lending">Lending</span></a>
+                
+              </li>
+              <li> <a href="borrowing.html"><img src="assets/images/lending.png" alt="" /> <span class="icon-lending">Borrowing</span></a> </li>
+              <li> <a href="#"><img src="assets/images/referral.png" alt="" /> <span class="icon-lending">Referral</span></a>
+                <ul>
+                  <li><a href="#" id="referral1">Referral 1</a></li>
+                  <li><a href="#" id="referral2">Referral 2</a></li>
+                  <li><a href="#" id="referral3">Referral 3</a></li>
+                  <li><a href="#" id="referral4">Referral 4</a></li>
+                  <li><a href="#" id="referral5">Referral 5</a></li>
+                  <li><a href="#" id="referral6">Referral 6</a></li>
+                </ul>
+              </li>
+              
+              <!-- /main -->
+              
+            </ul>
+          </div>
+        </div>
+        <!-- /main navigation --> 
+        
+      </div>
+    </div>
+    <!-- /main sidebar --> 
+    
+    <!-- Main content -->
+    <div class="content-wrapper"> 
+      
+      <!-- Content area -->
+      <div class="content white_panel">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-flat bordered text_panel">
+              <div class="panel-body">
+                
+                
+                <div class="flexslider mb-0">
+                  <ul class="slides">
+                    <li>
+                      <div class="heading-elements"> <img src="assets/images/logo-back.png" width="238" height="90"> </div>
+                      <h1>MITNET (MITNET)</h1>
+                      <h2>Initial Listing Price USD 0.12</h2>
+                      <h2>Major Exchanges Soon</h2>
+                    </li>
+                    <li>
+                      <div class="heading-elements"> <img src="assets/images/cardano-logo.png" width="319" height="90"> </div>
+                      <h1>Cardano (ADA)</h1>
+                      <h2>Last Price:      0.00001309 BTC</h2>
+                      <h2>24hr Volume:  5,261.28 BTC</h2>
+                    </li>
+                    <li>
+                      <div class="heading-elements"> <img src="assets/images/Iota-logo.png" width="268" height="90"> </div>
+                      <h1>IOTA (IOTA)</h1>
+                      <h2>Last Price:      0.00022120 BTC</h2>
+                      <h2>24hr Volume:  6.535.12 BTC</h2>
+                    </li>
+                    <li>
+                      <div class="heading-elements"> <img src="assets/images/ripple-logo.png" width="314" height="90"> </div>
+                      <h1>Ripple (XRP)</h1>
+                      <h2>Last Price:      0.00006633 BTC</h2>
+                      <h2>24hr Volume:  18.300033 BTC</h2>
+                    </li>
+                    <li>
+                      <div class="heading-elements"> <img src="assets/images/litecoin-logo.png" width="330" height="90"> </div>
+                      <h1>Litecoin (LTC)</h1>
+                      <h2>Last Price:      0.015677 BTC</h2>
+                      <h2>24hr Volume:  6,636,66 BTC</h2>
+                    </li>
+                    <li>
+                      <div class="heading-elements"> <img src="assets/images/stellar-logo.png" width="455" height="90"> </div>
+                      <h1>Stellar (XLM)</h1>
+                      <h2>Last Price:      0.00006633 BTC</h2>
+                      <h2>24hr Volume:  18.300033 BTC</h2>
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-4"> 
+                <!-- Current server load -->
+                <div class="panel panel-flat bordered bitto_box">
+                  <div class="panel-body">
+                    <div class="heading-elements"> <span class="text-danger">-0.36% </span> </div>
+                    <h3 class="no-margin"><strong>MITNET</strong></h3>
+                    <h4><strong>Soon</strong> <small><strong></strong></small></h4>
+                    <h4>Volume: </h4>
+                  </div>
+                  <div id="bitto-load"></div>
+                </div>
+                <!-- /current server load --> 
+              </div>
+              <div class="col-lg-4"> 
+                <!-- Current server load -->
+                <div class="panel panel-flat bordered bitto_box">
+                  <div class="panel-body">
+                    <div class="heading-elements"> <span class="text-success">58.09%</span> </div>
+                    <h3 class="no-margin"><strong>ADA/BTC</strong></h3>
+                    <h4 class="text-danger"><strong>0.00001309</strong> <small><strong>$0.22</strong></small></h4>
+                    <h4>Volume: 5,261.28BTC</h4>
+                  </div>
+                  <div id="ada-load"></div>
+                </div>
+                <!-- /current server load --> 
+              </div>
+              <div class="col-lg-4"> 
+                <!-- Current server load -->
+                <div class="panel panel-flat bordered bitto_box">
+                  <div class="panel-body">
+                    <div class="heading-elements"> <span class="text-danger">-7.34%</span> </div>
+                    <h3 class="no-margin"><strong>IOTA/BTC</strong></h3>
+                    <h4 class="text-success"><strong>0.00022120</strong> <small><strong>$3.74</strong></small></h4>
+                    <h4>Volume: 6.535.12 BTC</h4>
+                  </div>
+                  <div id="iota-load"></div>
+                </div>
+                <!-- /current server load --> 
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4"> 
+                <!-- Current server load -->
+                <div class="panel panel-flat bordered bitto_box">
+                  <div class="panel-body">
+                    <div class="heading-elements"> <span class="text-success">40.90%</span> </div>
+                    <h3 class="no-margin"><strong>XRP/BTC</strong></h3>
+                    <h4><strong>0.00006633</strong> <small><strong>$0.79</strong></small></h4>
+                    <h4>Volume: 18.300033 BTC</h4>
+                  </div>
+                  <div id="xrp-load"></div>
+                </div>
+                <!-- /current server load --> 
+              </div>
+              <div class="col-lg-4"> 
+                <!-- Current server load -->
+                <div class="panel panel-flat bordered bitto_box">
+                  <div class="panel-body">
+                    <div class="heading-elements"> <span class="text-danger">-12.34%</span> </div>
+                    <h3 class="no-margin"><strong>LTC/BTC</strong></h3>
+                    <h4><strong>0.015677</strong> <small><strong>$265.17</strong></small></h4>
+                    <h4>Volume: 6,636,66 BTC</h4>
+                  </div>
+                  <div id="ltc-load"></div>
+                </div>
+                <!-- /current server load --> 
+              </div>
+              <div class="col-lg-4"> 
+                <!-- Current server load -->
+                <div class="panel panel-flat bordered bitto_box">
+                  <div class="panel-body">
+                    <div class="heading-elements"> <span class="text-success">40.90%</span> </div>
+                    <h3 class="no-margin"><strong>XLM/BTC</strong></h3>
+                    <h4><strong>0.00006633 </strong> <small><strong>$0.79</strong></small></h4>
+                    <h4>Volume: 18.300033 BTC</h4>
+                  </div>
+                  <div id="xlm-load"></div>
+                </div>
+                <!-- /current server load --> 
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="add_box">
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li>
+                      <a href="#"><img src="assets/images/referral_add.png" alt="" /></a>
+                    </li>
+                    
+                    <li>
+                      <a href="#"><img src="assets/images/bn3.jpg" alt="" /></a>
+                    </li>
+                    
+                  </ul>
+                </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-7"> 
+            <!-- Tabs -->
+            <ul class="nav nav-lg nav-tabs nav-justified no-margin no-border-radius bg-indigo-400 border-top border-top-indigo-300">
+              <li class="active"> <a href="#favoritos_panel" class="text-size-small text-uppercase" data-toggle="tab"> <i class="icon_favoritos"></i><span>Favourites</span> </a> </li>
+              <li> <a href="#bnb_panel" class="text-size-small text-uppercase" data-toggle="tab"> BITTO Markets </a> </li>
+              <li> <a href="#btc_panel" class="text-size-small text-uppercase" data-toggle="tab"> BTC Markets </a> </li>
+              <li> <a href="#eth_panel" class="text-size-small text-uppercase" data-toggle="tab"> ETH Markets </a> </li>
+              <li> <a href="#usdt_panel" class="text-size-small text-uppercase" data-toggle="tab"> USDT Markets </a> </li>
+            </ul>
+            <!-- /tabs --> 
+          </div>
+          <div class="col-lg-2">
+            <div class="search_box">
+              <input type="text" name="firstname" class="bg-white">
+              <div class="search_icon"></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Tabs content -->
+        <div class="tab-content">
+          <div class="tab-pane active fade in has-padding" id="favoritos_panel">
+          	<div class="table-responsive bg-white">
+              <table class="table dataTable table-condensed table-striped teal">
+                <thead>
+                  <tr>
+                    <th>MARKET</th>
+                    <th>CURRENCY</th>
+                    <th>VOLUME <span class="volume_icon"></span></th>
+                    <th><span>%</span> CHANGE</th>
+                    <th>LAST PRICE</th>
+                    <th class="text-center">24HR HIGH</th>
+                    <th>24HR LOW</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="#">MNXT-XRP</a></td>
+                    <td>Ripple</td>
+                    <td>37610.615</td>
+                    <td class="green_text">41.9% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00004656</td>
+                    <td>0.00004589</td>
+                    <td>0.00006023</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">MNXT-ADA</a></td>
+                    <td>Ada</td>
+                    <td>14971.063</td>
+                    <td class="green_text">51.0% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00001228</td>
+                    <td>0.00001413</td>
+                    <td>0.00000810</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">MNXT-ETH</a></td>
+                    <td>Ethereum</td>
+                    <td>10354.613</td>
+                    <td class="red_text">-6.5% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.03890000</td>
+                    <td>0.04529000</td>
+                    <td>0.03355112</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">MNXT-BCC</a></td>
+                    <td>Bitcoin Cash</td>
+                    <td>8840.670</td>
+                    <td class="green_text">-7.6% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.10041900</td>
+                    <td>0.12075519</td>
+                    <td>0.09053000</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">MNXT-XLM</a></td>
+                    <td>Lumen</td>
+                    <td>7963.131</td>
+                    <td class="green_text">20.9% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00001087</td>
+                    <td>0.00001284</td>
+                    <td>0.00000876</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">MNXT-LTC</a></td>
+                    <td>Litecoin</td>
+                    <td>7686.399</td>
+                    <td class="red_text">-9.6% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.01572470</td>
+                    <td>0.01820000</td>
+                    <td>0.01309000</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">MNXT-VOX </a></td>
+                    <td>Voxels</td>
+                    <td>6206.576</td>
+                    <td class="red_text">23.0% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00002024</td>
+                    <td>0.00002966</td>
+                    <td>0.00001512</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">MNXT-SC</a></td>
+                    <td>Siacoin</td>
+                    <td>2099.128</td>
+                    <td class="green_text">2.3% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00000359</td>
+                    <td>0.00000379</td>
+                    <td>0.00000341</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">MNXT-XVG</a></td>
+                    <td>Verge</td>
+                    <td>1671.446</td>
+                    <td class="green_text">-2.6% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00000846</td>
+                    <td>0.00000890</td>
+                    <td>0.00000830</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">MNXT-NXT</a></td>
+                    <td>NXT</td>
+                    <td>1485.572</td>
+                    <td class="red_text">2.2% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00003232</td>
+                    <td>0.00003622</td>
+                    <td>0.00003000</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">MNXT-XCP</a></td>
+                    <td>Counterparty</td>
+                    <td>1458.556</td>
+                    <td class="green_text">-8.5% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00511727</td>
+                    <td>0.00677505</td>
+                    <td>0.00487746</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">MNXT-ZCL</a></td>
+                    <td>Zclassic</td>
+                    <td>1444.236</td>
+                    <td class="red_text">1.8% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00920000</td>
+                    <td>0.01050390</td>
+                    <td>0.00880000</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">MNXT-SYS</a></td>
+                    <td>SysCoin</td>
+                    <td>1181.792</td>
+                    <td class="green_text">-7.4% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00005835</td>
+                    <td>0.00007212</td>
+                    <td>0.00005190</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">MNXT-NEO</a></td>
+                    <td>Neo</td>
+                    <td>1151.037</td>
+                    <td class="red_text">-3.5% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.01071690</td>
+                    <td>0.01125099</td>
+                    <td>0.01059000</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">MNXT-BCC</a></td>
+                    <td>Bitcoin Cash</td>
+                    <td>1013.020</td>
+                    <td class="red_text">-0.8% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.14791531</td>
+                    <td>0.15175541</td>
+                    <td>0.14701000</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">MNXT-STRAT</a></td>
+                    <td>Stratis</td>
+                    <td>934.432</td>
+                    <td class="red_text">-0.8% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00110394</td>
+                    <td>0.00115152</td>
+                    <td>0.00105000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-pane fade has-padding" id="bnb_panel"> 
+             <div class="table-responsive bg-white">
+              <table class="table dataTable table-condensed table-striped teal">
+                <thead>
+                  <tr>
+                    <th>&nbsp</th>
+                    <th>MARKET</th>
+                    <th>CURRENCY</th>
+                    <th>VOLUME <span class="volume_icon"></span></th>
+                    <th><span>%</span> CHANGE</th>
+                    <th>LAST PRICE</th>
+                    <th class="text-center">24HR HIGH</th>
+                    <th>24HR LOW</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BITTO-XRP</a></td>
+                    <td>Ripple</td>
+                    <td>37610.615</td>
+                    <td class="green_text">41.9% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00004656</td>
+                    <td>0.00004589</td>
+                    <td>0.00006023</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BITTO-ADA</a></td>
+                    <td>Ada</td>
+                    <td>14971.063</td>
+                    <td class="green_text">51.0% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00001228</td>
+                    <td>0.00001413</td>
+                    <td>0.00000810</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BITTO-ETH</a></td>
+                    <td>Ethereum</td>
+                    <td>10354.613</td>
+                    <td class="red_text">-6.5% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.03890000</td>
+                    <td>0.04529000</td>
+                    <td>0.03355112</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BITTO-BCC</a></td>
+                    <td>Bitcoin Cash</td>
+                    <td>8840.670</td>
+                    <td class="green_text">-7.6% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.10041900</td>
+                    <td>0.12075519</td>
+                    <td>0.09053000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BITTO-XLM</a></td>
+                    <td>Lumen</td>
+                    <td>7963.131</td>
+                    <td class="green_text">20.9% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00001087</td>
+                    <td>0.00001284</td>
+                    <td>0.00000876</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BITTO-LTC</a></td>
+                    <td>Litecoin</td>
+                    <td>7686.399</td>
+                    <td class="red_text">-9.6% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.01572470</td>
+                    <td>0.01820000</td>
+                    <td>0.01309000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BITTO-VOX </a></td>
+                    <td>Voxels</td>
+                    <td>6206.576</td>
+                    <td class="red_text">23.0% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00002024</td>
+                    <td>0.00002966</td>
+                    <td>0.00001512</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BITTO-SC</a></td>
+                    <td>Siacoin</td>
+                    <td>2099.128</td>
+                    <td class="green_text">2.3% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00000359</td>
+                    <td>0.00000379</td>
+                    <td>0.00000341</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BITTO-XVG</a></td>
+                    <td>Verge</td>
+                    <td>1671.446</td>
+                    <td class="green_text">-2.6% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00000846</td>
+                    <td>0.00000890</td>
+                    <td>0.00000830</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BITTO-NXT</a></td>
+                    <td>NXT</td>
+                    <td>1485.572</td>
+                    <td class="red_text">2.2% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00003232</td>
+                    <td>0.00003622</td>
+                    <td>0.00003000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BITTO-XCP</a></td>
+                    <td>Counterparty</td>
+                    <td>1458.556</td>
+                    <td class="green_text">-8.5% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00511727</td>
+                    <td>0.00677505</td>
+                    <td>0.00487746</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BITTO-ZCL</a></td>
+                    <td>Zclassic</td>
+                    <td>1444.236</td>
+                    <td class="red_text">1.8% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00920000</td>
+                    <td>0.01050390</td>
+                    <td>0.00880000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BITTO-SYS</a></td>
+                    <td>SysCoin</td>
+                    <td>1181.792</td>
+                    <td class="green_text">-7.4% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00005835</td>
+                    <td>0.00007212</td>
+                    <td>0.00005190</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BITTO-NEO</a></td>
+                    <td>Neo</td>
+                    <td>1151.037</td>
+                    <td class="red_text">-3.5% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.01071690</td>
+                    <td>0.01125099</td>
+                    <td>0.01059000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BITTO-BCC</a></td>
+                    <td>Bitcoin Cash</td>
+                    <td>1013.020</td>
+                    <td class="red_text">-0.8% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.14791531</td>
+                    <td>0.15175541</td>
+                    <td>0.14701000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BITTO-STRAT</a></td>
+                    <td>Stratis</td>
+                    <td>934.432</td>
+                    <td class="red_text">-0.8% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00110394</td>
+                    <td>0.00115152</td>
+                    <td>0.00105000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+           </div>
+          <div class="tab-pane fade has-padding" id="btc_panel"> 
+             <div class="table-responsive bg-white">
+              <table class="table dataTable table-condensed table-striped teal">
+                <thead>
+                  <tr>
+                    <th>&nbsp</th>
+                    <th>MARKET</th>
+                    <th>CURRENCY</th>
+                    <th>VOLUME <span class="volume_icon"></span></th>
+                    <th><span>%</span> CHANGE</th>
+                    <th>LAST PRICE</th>
+                    <th class="text-center">24HR HIGH</th>
+                    <th>24HR LOW</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BTC-XLM</a></td>
+                    <td>Lumen</td>
+                    <td>7963.131</td>
+                    <td class="green_text">20.9% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00001087</td>
+                    <td>0.00001284</td>
+                    <td>0.00000876</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BTC-LTC</a></td>
+                    <td>Litecoin</td>
+                    <td>7686.399</td>
+                    <td class="red_text">-9.6% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.01572470</td>
+                    <td>0.01820000</td>
+                    <td>0.01309000</td>
+                  </tr>                  
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BTC-ETH</a></td>
+                    <td>Ethereum</td>
+                    <td>10354.613</td>
+                    <td class="red_text">-6.5% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.03890000</td>
+                    <td>0.04529000</td>
+                    <td>0.03355112</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BTC-XRP</a></td>
+                    <td>Ripple</td>
+                    <td>37610.615</td>
+                    <td class="green_text">41.9% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00004656</td>
+                    <td>0.00004589</td>
+                    <td>0.00006023</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BTC-ADA</a></td>
+                    <td>Ada</td>
+                    <td>14971.063</td>
+                    <td class="green_text">51.0% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00001228</td>
+                    <td>0.00001413</td>
+                    <td>0.00000810</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BTC-BCC</a></td>
+                    <td>Bitcoin Cash</td>
+                    <td>8840.670</td>
+                    <td class="green_text">-7.6% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.10041900</td>
+                    <td>0.12075519</td>
+                    <td>0.09053000</td>
+                  </tr>                  
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BTC-VOX </a></td>
+                    <td>Voxels</td>
+                    <td>6206.576</td>
+                    <td class="red_text">23.0% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00002024</td>
+                    <td>0.00002966</td>
+                    <td>0.00001512</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BTC-SC</a></td>
+                    <td>Siacoin</td>
+                    <td>2099.128</td>
+                    <td class="green_text">2.3% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00000359</td>
+                    <td>0.00000379</td>
+                    <td>0.00000341</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BTC-XVG</a></td>
+                    <td>Verge</td>
+                    <td>1671.446</td>
+                    <td class="green_text">-2.6% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00000846</td>
+                    <td>0.00000890</td>
+                    <td>0.00000830</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BTC-NXT</a></td>
+                    <td>NXT</td>
+                    <td>1485.572</td>
+                    <td class="red_text">2.2% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00003232</td>
+                    <td>0.00003622</td>
+                    <td>0.00003000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BTC-XCP</a></td>
+                    <td>Counterparty</td>
+                    <td>1458.556</td>
+                    <td class="green_text">-8.5% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00511727</td>
+                    <td>0.00677505</td>
+                    <td>0.00487746</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BTC-ZCL</a></td>
+                    <td>Zclassic</td>
+                    <td>1444.236</td>
+                    <td class="red_text">1.8% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00920000</td>
+                    <td>0.01050390</td>
+                    <td>0.00880000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BTC-SYS</a></td>
+                    <td>SysCoin</td>
+                    <td>1181.792</td>
+                    <td class="green_text">-7.4% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00005835</td>
+                    <td>0.00007212</td>
+                    <td>0.00005190</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BTC-NEO</a></td>
+                    <td>Neo</td>
+                    <td>1151.037</td>
+                    <td class="red_text">-3.5% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.01071690</td>
+                    <td>0.01125099</td>
+                    <td>0.01059000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BTC-BCC</a></td>
+                    <td>Bitcoin Cash</td>
+                    <td>1013.020</td>
+                    <td class="red_text">-0.8% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.14791531</td>
+                    <td>0.15175541</td>
+                    <td>0.14701000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">BTC-STRAT</a></td>
+                    <td>Stratis</td>
+                    <td>934.432</td>
+                    <td class="red_text">-0.8% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00110394</td>
+                    <td>0.00115152</td>
+                    <td>0.00105000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+           </div>
+          <div class="tab-pane fade has-padding" id="eth_panel"> 
+              <div class="table-responsive bg-white">
+              <table class="table dataTable table-condensed table-striped teal">
+                <thead>
+                  <tr>
+                    <th>&nbsp</th>
+                    <th>MARKET</th>
+                    <th>CURRENCY</th>
+                    <th>VOLUME <span class="volume_icon"></span></th>
+                    <th><span>%</span> CHANGE</th>
+                    <th>LAST PRICE</th>
+                    <th class="text-center">24HR HIGH</th>
+                    <th>24HR LOW</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">ETH-XRP</a></td>
+                    <td>Ripple</td>
+                    <td>37610.615</td>
+                    <td class="green_text">41.9% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00004656</td>
+                    <td>0.00004589</td>
+                    <td>0.00006023</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">ETH-ADA</a></td>
+                    <td>Ada</td>
+                    <td>14971.063</td>
+                    <td class="green_text">51.0% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00001228</td>
+                    <td>0.00001413</td>
+                    <td>0.00000810</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">ETH-ETH</a></td>
+                    <td>Ethereum</td>
+                    <td>10354.613</td>
+                    <td class="red_text">-6.5% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.03890000</td>
+                    <td>0.04529000</td>
+                    <td>0.03355112</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">ETH-BCC</a></td>
+                    <td>Bitcoin Cash</td>
+                    <td>8840.670</td>
+                    <td class="green_text">-7.6% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.10041900</td>
+                    <td>0.12075519</td>
+                    <td>0.09053000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">ETH-XLM</a></td>
+                    <td>Lumen</td>
+                    <td>7963.131</td>
+                    <td class="green_text">20.9% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00001087</td>
+                    <td>0.00001284</td>
+                    <td>0.00000876</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">ETH-LTC</a></td>
+                    <td>Litecoin</td>
+                    <td>7686.399</td>
+                    <td class="red_text">-9.6% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.01572470</td>
+                    <td>0.01820000</td>
+                    <td>0.01309000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">ETH-VOX </a></td>
+                    <td>Voxels</td>
+                    <td>6206.576</td>
+                    <td class="red_text">23.0% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00002024</td>
+                    <td>0.00002966</td>
+                    <td>0.00001512</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">ETH-SC</a></td>
+                    <td>Siacoin</td>
+                    <td>2099.128</td>
+                    <td class="green_text">2.3% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00000359</td>
+                    <td>0.00000379</td>
+                    <td>0.00000341</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">ETH-XVG</a></td>
+                    <td>Verge</td>
+                    <td>1671.446</td>
+                    <td class="green_text">-2.6% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00000846</td>
+                    <td>0.00000890</td>
+                    <td>0.00000830</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">ETH-NXT</a></td>
+                    <td>NXT</td>
+                    <td>1485.572</td>
+                    <td class="red_text">2.2% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00003232</td>
+                    <td>0.00003622</td>
+                    <td>0.00003000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">ETH-XCP</a></td>
+                    <td>Counterparty</td>
+                    <td>1458.556</td>
+                    <td class="green_text">-8.5% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00511727</td>
+                    <td>0.00677505</td>
+                    <td>0.00487746</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">ETH-ZCL</a></td>
+                    <td>Zclassic</td>
+                    <td>1444.236</td>
+                    <td class="red_text">1.8% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00920000</td>
+                    <td>0.01050390</td>
+                    <td>0.00880000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">ETH-SYS</a></td>
+                    <td>SysCoin</td>
+                    <td>1181.792</td>
+                    <td class="green_text">-7.4% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00005835</td>
+                    <td>0.00007212</td>
+                    <td>0.00005190</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">ETH-NEO</a></td>
+                    <td>Neo</td>
+                    <td>1151.037</td>
+                    <td class="red_text">-3.5% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.01071690</td>
+                    <td>0.01125099</td>
+                    <td>0.01059000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">ETH-BCC</a></td>
+                    <td>Bitcoin Cash</td>
+                    <td>1013.020</td>
+                    <td class="red_text">-0.8% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.14791531</td>
+                    <td>0.15175541</td>
+                    <td>0.14701000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">ETH-STRAT</a></td>
+                    <td>Stratis</td>
+                    <td>934.432</td>
+                    <td class="red_text">-0.8% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00110394</td>
+                    <td>0.00115152</td>
+                    <td>0.00105000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+           </div>
+          <div class="tab-pane fade has-padding" id="usdt_panel">
+            <div class="table-responsive bg-white">
+              <table class="table dataTable table-condensed table-striped teal">
+                <thead>
+                  <tr>
+                    <th>&nbsp</th>
+                    <th>MARKET</th>
+                    <th>CURRENCY</th>
+                    <th>VOLUME <span class="volume_icon"></span></th>
+                    <th><span>%</span> CHANGE</th>
+                    <th>LAST PRICE</th>
+                    <th class="text-center">24HR HIGH</th>
+                    <th>24HR LOW</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">USDT-XRP</a></td>
+                    <td>Ripple</td>
+                    <td>37610.615</td>
+                    <td class="green_text">41.9% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00004656</td>
+                    <td>0.00004589</td>
+                    <td>0.00006023</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">USDT-ADA</a></td>
+                    <td>Ada</td>
+                    <td>14971.063</td>
+                    <td class="green_text">51.0% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00001228</td>
+                    <td>0.00001413</td>
+                    <td>0.00000810</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">USDT-ETH</a></td>
+                    <td>Ethereum</td>
+                    <td>10354.613</td>
+                    <td class="red_text">-6.5% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.03890000</td>
+                    <td>0.04529000</td>
+                    <td>0.03355112</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">USDT-BCC</a></td>
+                    <td>Bitcoin Cash</td>
+                    <td>8840.670</td>
+                    <td class="green_text">-7.6% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.10041900</td>
+                    <td>0.12075519</td>
+                    <td>0.09053000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">USDT-XLM</a></td>
+                    <td>Lumen</td>
+                    <td>7963.131</td>
+                    <td class="green_text">20.9% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00001087</td>
+                    <td>0.00001284</td>
+                    <td>0.00000876</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">USDT-LTC</a></td>
+                    <td>Litecoin</td>
+                    <td>7686.399</td>
+                    <td class="red_text">-9.6% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.01572470</td>
+                    <td>0.01820000</td>
+                    <td>0.01309000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">USDT-VOX </a></td>
+                    <td>Voxels</td>
+                    <td>6206.576</td>
+                    <td class="red_text">23.0% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00002024</td>
+                    <td>0.00002966</td>
+                    <td>0.00001512</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">USDT-SC</a></td>
+                    <td>Siacoin</td>
+                    <td>2099.128</td>
+                    <td class="green_text">2.3% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00000359</td>
+                    <td>0.00000379</td>
+                    <td>0.00000341</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">USDT-XVG</a></td>
+                    <td>Verge</td>
+                    <td>1671.446</td>
+                    <td class="green_text">-2.6% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00000846</td>
+                    <td>0.00000890</td>
+                    <td>0.00000830</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">USDT-NXT</a></td>
+                    <td>NXT</td>
+                    <td>1485.572</td>
+                    <td class="red_text">2.2% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00003232</td>
+                    <td>0.00003622</td>
+                    <td>0.00003000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">USDT-XCP</a></td>
+                    <td>Counterparty</td>
+                    <td>1458.556</td>
+                    <td class="green_text">-8.5% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00511727</td>
+                    <td>0.00677505</td>
+                    <td>0.00487746</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">USDT-ZCL</a></td>
+                    <td>Zclassic</td>
+                    <td>1444.236</td>
+                    <td class="red_text">1.8% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00920000</td>
+                    <td>0.01050390</td>
+                    <td>0.00880000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">USDT-SYS</a></td>
+                    <td>SysCoin</td>
+                    <td>1181.792</td>
+                    <td class="green_text">-7.4% <i class="fa fa-arrow-down" aria-hidden="true"></i></td>
+                    <td>0.00005835</td>
+                    <td>0.00007212</td>
+                    <td>0.00005190</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">USDT-NEO</a></td>
+                    <td>Neo</td>
+                    <td>1151.037</td>
+                    <td class="red_text">-3.5% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.01071690</td>
+                    <td>0.01125099</td>
+                    <td>0.01059000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">USDT-BCC</a></td>
+                    <td>Bitcoin Cash</td>
+                    <td>1013.020</td>
+                    <td class="red_text">-0.8% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.14791531</td>
+                    <td>0.15175541</td>
+                    <td>0.14701000</td>
+                  </tr>
+                  <tr>
+                    <td width="5px"><i class="icon_favoritos"></i></td>
+                    <td><a href="#">USDT-STRAT</a></td>
+                    <td>Stratis</td>
+                    <td>934.432</td>
+                    <td class="red_text">-0.8% <i class="fa fa-arrow-up" aria-hidden="true"></i></td>
+                    <td>0.00110394</td>
+                    <td>0.00115152</td>
+                    <td>0.00105000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- /tabs content --> 
+        
+      </div>
+      <!-- /content area --> 
+      
+    </div>
+    <!-- /main content --> 
+    
+  </div>
+  <!-- /page content --> 
+  
+</div>
+<!-- /page container --> 
+
+<!-- Footer -->
+<div class="navbar navbar-default navbar-fixed-bottom footer_panel">
+  <ul class="nav navbar-nav no-border visible-xs-block">
+    <li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second"><i class="icon-circle-up2"></i></a></li>
+  </ul>
+  <div class="navbar-collapse collapse" id="navbar-second">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="navbar-text"> <a href="#">2018 MITNet copyright</a> </div>
+      </div>
+      <div class="col-sm-6">
+        <p>Prototype Only. Launching according to Roadmap</p>
+      </div>
+      <div class="col-sm-3">
+        <div class="navbar-right">
+          <ul class="wifi_icon">
+            <li><a href="#"><i class="fa fa-wifi" aria-hidden="true"></i> Connected</a></li>
+          </ul>
+          <ul class="social">
+            <li class="social_icon"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li class="social_icon"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="social_icon"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /footer -->
+
+</body>
+
+<!-- Mirrored from demo.bitto.tech/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Mar 2018 04:14:57 GMT -->
+</html>

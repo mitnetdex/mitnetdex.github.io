@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from demo.bitto.tech/lending.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Mar 2018 04:16:51 GMT -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MITNEt Exchange | ICO Bitcoin Exchange, Signal Trading</title>
+
+<!-- Global stylesheets -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!-- /global stylesheets -->
+
+<!-- Core JS files -->
+<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+
+<!-- /core JS files -->
+
+<!-- Theme JS files -->
+<script type="text/javascript" src="assets/js/core/libraries/jquery_ui/interactions.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins/notifications/bootbox.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/notifications/sweet_alert.min.js"></script>
+  
+<script type="text/javascript" src="assets/js/core/app.js"></script>
+
+<script type="text/javascript" src="assets/js/pages/form_select2.js"></script>
+
+</head>
+
+<body class="navbar-bottom">
+
+<!-- Main navbar -->
+<div class="navbar navbar-inverse bg-indigo">
+  <div class="navbar-header"> <a class="navbar-brand" href="index-2.html"><img src="assets/images/logo.png" alt=""></a>
+    <ul class="nav navbar-nav visible-xs-block">
+      <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+      <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+    </ul>
+  </div>
+  <div class="navbar-collapse collapse" id="navbar-mobile">
+    <ul class="nav navbar-nav bitto_text">
+      <!--<li><a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a></li>-->
+      <li>BITTO = $21</li>
+      <li>BTC = $17000</li>
+      <li>ETH = $700</li>
+    </ul>
+    <div class="navbar-right">
+      <ul>
+        <li><a href="#">Wallet</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#"><img src="assets/images/flag_top.png" alt="" /></a></li>
+        <li><a href="#"><img src="assets/images/chat.png" alt="" /></a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</div>
+<!-- /main navbar --> 
+
+<!-- Page container -->
+<div class="page-container"> 
+  
+  <!-- Page content -->
+  <div class="page-content"> 
+    
+    <!-- Main sidebar -->
+    <div class="sidebar sidebar-main sidebar-default">
+      <div class="sidebar-content"> 
+        
+        <!-- User menu -->
+        <div class="sidebar-user-material">
+          <div class="row">
+            <div class="col-sm-10">
+              <div class="left_icon"><img src="assets/images/round_icon.png" alt="" /></div>
+              <div class="left_text">
+                <h1>John Smith</h1>
+                <ul>
+                  <li class="sky">Premium</li>
+                  <li class="pink">VIP</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-2 text-right"> <a class="sidebar-control sidebar-main-toggle hidden-xs"><i class="icon-paragraph-justify3"></i></a> </div>
+          </div>
+          
+          
+          <div class="navigation-wrapper collapse" id="user-nav">
+            <ul class="navigation">
+              <li><a href="#"><i class="icon-user-plus"></i> <span>My profile</span></a></li>
+              <li><a href="#"><i class="icon-coins"></i> <span>My balance</span></a></li>
+              <li><a href="#"><i class="icon-comment-discussion"></i> <span><span class="badge bg-teal-400 pull-right">58</span> Messages</span></a></li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="icon-cog5"></i> <span>Account settings</span></a></li>
+              <li><a href="#"><i class="icon-switch2"></i> <span>Logout</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- /user menu --> 
+        
+        <!-- Main navigation -->
+        <div class="sidebar-category sidebar-category-visible navigation_panel">
+          <div class="category-content no-padding">
+            <ul class="navigation navigation-main navigation-accordion">
+              
+              <!-- Main -->
+              <li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
+              <li><a href="index-2.html"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+              <li><a href="index-2.html">Profile</a></li>
+              <li><a href="exchange.html"><i class="icon-exchange"></i> <span>Exchange</span></a></li>
+              <li> <a href="signal.html"><i class="icon-signal"></i> <span>Signal</span></a>
+                <ul>
+                  <li><a href="signal.html">Portfolio</a></li>
+                  <li><a href="#">Watchlist</a></li>
+                  <li><a href="signal_trading.html">Signal Trading</a></li>
+                  <li><a href="#">Reports</a></li>
+                </ul>
+              </li>
+              <li class="active"> <a href="lending.html"><img src="assets/images/lending.png" alt="" /> <span class="icon-lending">Lending</span></a>
+              </li>
+              <li> <a href="borrowing.html"><img src="assets/images/lending.png" alt="" /> <span class="icon-lending">Borrowing</span></a> </li>
+              <li> <a href="#"><img src="assets/images/referral.png" alt="" /> <span class="icon-lending">Referral</span></a>
+                <ul>
+                  <li><a href="#" id="referral1">Referral 1</a></li>
+                  <li><a href="#" id="referral2">Referral 2</a></li>
+                  <li><a href="#" id="referral3">Referral 3</a></li>
+                  <li><a href="#" id="referral4">Referral 4</a></li>
+                  <li><a href="#" id="referral5">Referral 5</a></li>
+                  <li><a href="#" id="referral6">Referral 6</a></li>
+                </ul>
+              </li>
+              
+              <!-- /main -->
+              
+            </ul>
+          </div>
+        </div>
+        <!-- /main navigation --> 
+        
+      </div>
+    </div>
+    <!-- /main sidebar --> 
+    
+    <!-- Main content -->
+    <div class="content-wrapper"> 
+    
+    	<div class="content">
+        <div class="border-top-lg border-top-teal">
+          <div class="page-header page-header-default page-header-lg">
+            <div class="page-header-content inline">
+              <div class="page-title short">
+                <h2 class="text-teal">Lending</h2>
+                <h4>Your Summary</h4>
+                
+                <a class="btn-gray" href="#">Class 4 lend up to $500,000</a>
+              </div>
+              <div class="heading-elements">
+                <form class="form-inline">
+                  <div class="form-group">
+                  <select data-placeholder="Select a state..." class="select-icons select-size-lg" tabindex="-1" aria-hidden="true" style="width:250px">
+                    <option value="australia" data-icon="aus" selected="selected">Australia</option>
+                    <option value="hongkong" data-icon="hk">Hong Kong</option>
+                    <option value="india" data-icon="ind">India</option>
+                    <option value="japan" data-icon="jpn">Japan</option>
+                    <option value="korea" data-icon="kor">Korea</option>
+                    <option value="singapore" data-icon="sin">Singapore</option>
+                    <option value="uk" data-icon="uk">United Kingdom</option>
+                    
+                  </select>
+                  </div>
+                  <div class="form-group">
+                    <button class="btn btn-default  btn-rounded bg-teal btn-xs mini" type="button">Select</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Content area -->
+      <div class="content">
+      	<div class="row">
+        	<div class="col-lg-3">
+          	<div class="panel available-lending mb-0">
+            	<div class="panel-heading">
+                <h5 class="panel-title">John Smith</h5>
+                <div class="heading-elements">
+                	<span class="label label-primary" style="font-size:11px; color:#fff">Premium</span>
+                  <span class="label label-primary bg-pink" style="font-size:11px; color:#fff">VIP</span>
+                </div>
+              </div>
+            	<div class="panel-body">
+              	<p>Available to lend</p>
+                <h1>$66,048</h1>
+                <h3><i class="icon-bitto"></i> 10,000 <i class="icon-lock"></i> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+          	<div class="panel panel-flat ">
+              <div class="panel-heading bg-teal">
+                <h6 class="panel-title text-semibold">Total Interested Earned</h6>
+                
+              </div>
+  
+              <div class="table-responsive">
+                <table class="table table-condensed mini ws-nowrap">
+                  <thead>
+                    <tr class="bg-teal-100">
+                      <th>Amout</th>
+                      <th>Client</th>
+                      <th>Details</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>£ 262.50</td>
+                      <td>edwaxxx.1@gmail.com</td>
+                      <td>Paid <i class="glyphicon glyphicon-ok"></i></td>
+                    </tr>
+                    <tr class="pending">
+                      <td>£ 577.50</td>
+                      <td>dilxxx@gmail.com</td>
+                      <td>Pending <i class="glyphicon glyphicon-hourglass"></i></td>
+                    </tr>
+                    <tr>
+                      <td>£ 577.50</td>
+                      <td>katyxxx@gmail.com</td>
+                      <td>Paid <i class="glyphicon glyphicon-ok"></i></td>
+                    </tr>
+                    <tr>
+                      <td>£ 300.50</td>
+                      <td>boyzxx@gmail.com</td>
+                      <td>Paid <i class="glyphicon glyphicon-ok"></i></td>
+                    </tr>
+                    <tr>
+                      <td>£ 788.50</td>
+                      <td>billgxxxxx@gmail.com</td>
+                      <td>Paid <i class="glyphicon glyphicon-ok"></i></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+          	<div class="panel panel-flat">
+            	<div class="row">
+              	<div class="col-xs-7">
+                	<div class="panel-body p-15">
+                		<h6 class="mt-0"><strong>Automated investing</strong></h6>
+                    <form class="form-horizontal">
+                      <div class="form-group mb-5">
+                        <label class="col-sm-7 control-label"><strong>Min</strong></label>
+                        <div class="col-sm-5">
+                          <select class="width-auto form-control">
+                            <option value="wordpress2">1%</option>
+                            <option value="tumblr2">5%</option>
+                            <option value="tumblr3">10%</option>
+                            <option value="tumblr4">20%</option>
+                            <option value="tumblr5">25%</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group mb-5">
+                        <label class="col-sm-7 control-label"><strong>Term Monthly</strong></label>
+                        <div class="col-sm-5">
+                          <select class="width-auto form-control">
+                            <option value="wordpress2">1</option>
+                            <option value="tumblr2">3</option>
+                            <option value="tumblr3">6</option>
+                            <option value="tumblr4">12</option>
+                          </select>
+                        </div>
+                      </div>
+                      
+                      <div class="form-group mb-5 mt-10">
+                      	
+                        <div class="col-sm-7">
+                          <button type="button" class="btn btn-block btn-rounded mini btn-auto auto" id="alert">Auto</button>
+                    			<small class="help-block">Success!</small>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-xs-5 pl-0">
+                	<div class="panel-body p-15 pl-0 text-center">
+                		<p><span class="price-l">$450,000</span><span class="price-s">.00</span> <br><strong>Main Balance</strong></p>
+                    <button type="button" class="btn btn-block btn-rounded mini btn-auto auto">Deposit</button>
+                    <button type="button" class="btn btn-block btn-rounded mini btn-auto auto">Withdraw</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <script>
+				$(function() {
+					$('.btn-auto').click(function() {
+							if($(this).hasClass('auto')){
+								$(this).removeClass('auto');
+								
+									bootbox.alert("Are you sure you want to cancel?");
+								
+							}else{
+								$(this).addClass('auto')
+							}
+					});
+				});
+			</script>
+
+        <!--/.panel-->
+        
+        <div class="panel panel-white">
+          <div class="panel-heading">
+            <h6 class="panel-title">Filters</h6>
+            <div class="heading-elements">
+                Loan repayment <strong>96%</strong> success rate
+                <div class="divider-v"></div>
+                Statistics: <strong>21</strong> loans funded to date
+            </div>
+          </div>
+          
+          <div class="panel-body">
+          	<form>
+              <div class="row">
+                <div class="col-lg-3">
+                	<div class="form-group m-0">
+                    <label for="exampleInputEmail1"  class="display-block text-semibold">Base currency
+                    </label>
+                    
+										<label class="checkbox-inline checkbox-right">                    	
+                      <input type="checkbox" class="styled" checked="checked">
+											<img src="assets/images/bitto-s.png" width="55" height="21">
+										</label>
+                     
+
+										<label class="checkbox-inline checkbox-right">
+											<input type="checkbox" class="styled">
+										<img src="assets/images/bitcon-s.png" width="46" height="21">
+                     </label>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                	
+                  <div class="form-group m-0">
+                    <label for="exampleInputEmail1"  class="display-block text-semibold">Rating  <a href="#">select all</a></label>
+										<label class="checkbox-inline checkbox-right">
+                      <input type="checkbox" class="styled" checked="checked">
+											<img src="assets/images/t1-s.png" width="20" height="21">
+										</label>
+
+										<label class="checkbox-inline checkbox-right">
+											<input type="checkbox" class="styled">
+											<img src="assets/images/t2-s.png" width="20" height="21">
+                     </label>
+                     
+                     <label class="checkbox-inline checkbox-right">
+											<input type="checkbox" class="styled">
+											<img src="assets/images/t3-s.png" width="20" height="21">
+                     </label>
+                     
+                     <label class="checkbox-inline checkbox-right">
+											<input type="checkbox" class="styled">
+											<img src="assets/images/t4-s.png" width="20" height="21">
+                     </label>
+                     
+                     <label class="checkbox-inline checkbox-right">
+											<input type="checkbox" class="styled">
+											<img src="assets/images/t5-s.png" width="20" height="21">
+                     </label>
+                  </div>
+                </div>
+                <div class="col-lg-4 p-0" >
+                	<div class="form-group m-0">
+                    <label for="exampleInputEmail1"  class="display-block text-semibold">Rating  <a href="#">select all</a></label>
+										<label class="checkbox-inline checkbox-right">
+                      <input type="checkbox" class="styled" checked="checked">
+											6 weeks
+										</label>
+
+										<label class="checkbox-inline checkbox-right">
+											<input type="checkbox" class="styled">
+											6 months
+                     </label>
+                     
+                     <label class="checkbox-inline checkbox-right">
+											<input type="checkbox" class="styled">
+											12 months
+                     </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <div class="panel panel-success panel-gray">
+          <div class="panel-heading">
+            <h3 class="panel-title">2 loan listings</a></h3>
+            <div class="heading-elements">
+              <ul class="icons-list">
+                <li class="mr-20">Bitto = $12</li>
+                <li>BTC = $17000</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="panel-body p-0">
+            <div class="table-responsive">
+            <table class="table border-dashed ws-nowrap">
+            	<thead>
+              	<tr>
+                	<th align="center" class="text-center">% P.A.</th>
+                  <th align="center" class="text-center">TERM</th>
+                  <th align="center" class="text-center">COUNTRY</th>
+                  <th align="center" class="text-center">BC</th>
+                  <th align="center" class="text-center">AMOUNT</th>
+                  <th align="center" class="text-center">FUNDING STATUS</th>
+                  <th align="center" class="text-center">DAYS LEFT</th>
+                  <th align="center" class="text-center">INVEST</th>
+                </tr>
+              </thead>
+              <tbody>
+              	<tr>
+                	<td align="center">
+                 		<div><img src="assets/images/t1-s.png" width="20" height="21"></div>
+                    <small>24.8%</small>
+                  </td>
+                  <td align="center">6W</td>
+                  <td align="center"><img src="assets/images/flag-1.png" width="39" height="19"></td>
+                  <td align="center"><img src="assets/images/bitto-s2.png" width="33" height="33"></td>
+                  <td align="center">10,000 BITTO <br> ($120,000 MAX)</td>
+                  <td align="center">
+                    <div class="progress">
+                      <div class="progress-bar progress-lg bg-grey-200" style="width: 25%">
+                        <span>$53,000 / $75,000</span>
+                      </div>
+                    </div>
+                	</td>
+                  <td align="center">60D</td>
+                  <td align="center"><a class="btn btn-block bg-teal btn-sm">Place Bid</a></td>
+                </tr>
+                <tr>
+                	<td align="center">
+                 		<div><img src="assets/images/t1-s.png" width="20" height="21"></div>
+                    <small>24.8%</small>
+                  </td>
+                  <td align="center">6W</td>
+                  <td align="center"><img src="assets/images/flag-1.png" width="39" height="19"></td>
+                  <td align="center"><img src="assets/images/bitcoin.png" width="33" height="33"></td>
+                  <td align="center">10,000 BITTO <br> ($120,000 MAX)</td>
+                  <td align="center">
+                    <div class="progress">
+                      <div class="progress-bar progress-lg bg-grey-200" style="width: 25%">
+                        <span>$53,000 / $75,000</span>
+                      </div>
+                    </div>
+                	</td>
+                  <td align="center">60D</td>
+                  <td align="center"><a class="btn btn-block bg-teal btn-sm">Place Bid</a></td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- /content area --> 
+      
+    </div>
+    <!-- /main content --> 
+    
+  </div>
+  <!-- /page content --> 
+  
+</div>
+<!-- /page container --> 
+
+<!-- Footer -->
+<div class="navbar navbar-default navbar-fixed-bottom footer_panel">
+  <ul class="nav navbar-nav no-border visible-xs-block">
+    <li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second"><i class="icon-circle-up2"></i></a></li>
+  </ul>
+  <div class="navbar-collapse collapse" id="navbar-second">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="navbar-text"> <a href="#"></a> </div>
+      </div>
+      <div class="col-sm-6">
+        <p></p>
+      </div>
+      <div class="col-sm-3">
+        <div class="navbar-right">
+          <ul class="wifi_icon">
+            <li><a href="#"><i class="fa fa-wifi" aria-hidden="true"></i> Connected</a></li>
+          </ul>
+          <ul class="social">
+            <li class="social_icon"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li class="social_icon"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class="social_icon"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /footer -->
+
+<script src="assets/js/pages/jquery.flagstrap.js"></script>
+<script type="text/javascript">
+
+
+</script>
+
+</body>
+
+<!-- Mirrored from demo.bitto.tech/lending.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Mar 2018 04:16:58 GMT -->
+</html>
